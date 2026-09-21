@@ -425,6 +425,7 @@ section { padding: 4.2rem 0; }
 .card h3 { font-size: 1.12rem; margin-bottom: 0.4rem; }
 .card p:last-child { margin-bottom: 0; }
 .card p { color: var(--muted); }
+.card p + p { margin-top: 0.75rem; }
 
 .icon-pill {
   width: 42px;

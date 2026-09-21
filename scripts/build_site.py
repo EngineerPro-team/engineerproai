@@ -70,33 +70,38 @@ COURSES = [
             ],
             "hours": "2 hours / session",
         },
-        "title": "AI Productivity & Harnesses",
+        "title": "AI Productivity and Harnesses",
         "tagline": "Work with AI like an engineer at Big Tech.",
-        "audience": "Technical and non-technical professionals: PMs, BAs, operations, marketers, knowledge workers, and developers.",
+        "audience": "Technical and non-technical professionals, including product managers, business analysts, operations staff, marketers, knowledge workers, and developers.",
         "capability": "Progress from L0 to L5 through personal assistance, collaboration, delegation, orchestration, and AI workflow operations.",
         "prereq": "Basic use of computers, files, and office applications. The non-technical track does not require programming. The technical track is for learners who can read and edit code.",
-        "goal": "Use AI to complete work and achieve measurable productivity gains. Practice with documents, tabular data, workplace information, and AI coding tools to create useful applications.",
-        "outcome": "Identify tasks suitable for AI, collaborate and delegate at different autonomy levels, build utilities with AI coding, configure an agent team, run goal-driven workflows, and select a useful autonomy level for each task.",
-        "tools": "A paid AI seat for two months, a workspace for running utilities, templates, API quota, and setup support.",
-        "proof": "Utilities, harnesses, orchestration logs, an L0–L5 record, and a productivity report.",
+        "goal": "The main goal is to use AI to complete work and achieve measurable productivity gains. Learners work with documents, tabular data, workplace information, and AI coding tools to create useful applications. Both technical and non-technical learners practice defining requirements, directing AI, testing results, finding errors, and refining outputs.",
+        "outcome": "Learners can identify tasks suitable for AI, collaborate and delegate at different levels of autonomy, build utilities with AI coding, configure an agent team on a provided framework, run goal-driven workflows within defined boundaries, evaluate results, and select the most useful autonomy level for each task.",
+        "tools": [
+            "Learners receive a suitable paid AI seat for two months, a workspace for running utilities, templates, and setup support. Labs that require APIs have a separate budget. The selected account must support all features used in class.",
+            "L4 and L5 also require a prepared orchestration environment, simulated triggers and backlogs, enough quota for multiple agents, logs, and independent tests. The complete L0 to L5 journey must pass a pilot before it is advertised. Non-technical learners receive configuration interfaces and sample data. Technical learners receive a sample repository for deeper practice.",
+            "The program may use Claude Code for coding, Cowork for document tasks, or equivalent tools validated during the pilot. Each cohort uses one primary toolset to maximize practice time. Instructors verify interfaces, access, and recipes before the module begins, while keeping core skills stable as tools change.",
+        ],
+        "proof": "Utilities, harnesses, orchestration logs, an L0 to L5 record, and a productivity report.",
         "weeks": [
-            ("1", "S1, L0: Select a work task, record a baseline, and define completion criteria", "S2, L1: Activate accounts, use AI for small tasks, and check for errors"),
-            ("2", "S3, L2: Provide requirements, context, and examples; build a checkpoint-based collaboration workflow", "S4, L2: Use AI coding to build a small document or data utility"),
-            ("3", "S5, L2: Debug with AI, run business tests, and save versions", "S6, L3: Turn requirements into a delegable task with artifacts and acceptance criteria"),
-            ("4", "S7, L3: Build a custom harness with instructions, context, skills, templates, tools, and tests", "S8, L3: Let an agent complete an independent task in an isolated workspace"),
-            ("5", "S9, L3: Review the result, test missing-data cases, and revise the configuration", "S10, L4: Write acceptance criteria and configure an agent team, handoff contracts, and workspaces"),
-            ("6", "S11, L4: Review the plan and ask the agent team to implement the specification", "S12, L4: Verify independently and compare with a single agent"),
-            ("7", "S13, L5: Configure a software factory to accept specs, build or update utilities, test, and package", "S14, L5: Run a new requirement end to end with permission, budget, and failure limits"),
-            ("8", "S15, L5: Audit autonomy, review time, quality, cost, and productivity trade-offs", "S16, L5: Unguided capstone, defend the evidence, and select a practical adoption level"),
+            ("1", "S1, L0: Select a work task, record a baseline, and define completion criteria", "S2, L1: Activate accounts, use AI suggestions for small tasks, and check for errors"),
+            ("2", "S3, L2: Provide requirements, context, and examples, then build a checkpoint-based collaboration workflow", "S4, L2: Use AI coding to build a small document or data utility and understand its inputs and outputs"),
+            ("3", "S5, L2: Debug with AI, run business tests, save versions, and complete the collaboration milestone", "S6, L3: Turn requirements into a delegable task with defined artifacts and acceptance criteria"),
+            ("4", "S7, L3: Build a custom harness with instructions, context, skills or templates, tools, and tests", "S8, L3: Let an agent complete an independent task in an isolated workspace and collect artifacts and logs"),
+            ("5", "S9, L3: Review the result, test missing-data cases, revise the configuration, and run it again", "S10, L4: Write acceptance criteria and configure an agent team, handoff contracts, and workspaces"),
+            ("6", "S11, L4: Review the plan and ask the agent team to implement the specification within defined boundaries", "S12, L4: Verify results independently, compare them with a single agent, and complete the spec-driven orchestration milestone"),
+            ("7", "S13, L5: Configure a software factory from a template to accept specifications, build or update utilities, test them, and package results", "S14, L5: Run a new requirement end to end with permission limits, budget limits, and failure cases"),
+            ("8", "S15, L5: Audit autonomy, review time, quality, cost, and productivity trade-offs", "S16, L5: Complete an unguided capstone run, defend the evidence, and select a practical adoption level"),
         ],
         "levels": [
-            ("L0 Baseline", "Understand the current workflow and select a suitable problem"),
-            ("L1 AI Assistance", "Use AI for small tasks and verify every output"),
-            ("L2 AI Collaboration", "Provide context, discuss requirements, and refine results through checkpoints"),
-            ("L3 Task Delegation", "Delegate a complete task and evaluate the resulting artifact"),
-            ("L4 Spec-Driven AI Team", "Write acceptance criteria, configure roles and handoffs, and review plans and results"),
-            ("L5 Software Factory", "Configure a workflow that implements, tests, packages, and handles exceptions"),
+            ("L0: Baseline", "Understand the current workflow and select a suitable problem", "Describe an office task and save an example of the expected result", "Describe a coding or data task and save a baseline"),
+            ("L1: AI Assistance", "Use AI for small tasks and verify every output", "Rewrite part of a report or spreadsheet formula", "Review a small code suggestion"),
+            ("L2: AI Collaboration", "Provide context, discuss requirements, and refine results through checkpoints", "Build a report or dashboard with AI and sample data", "Build a small utility with a coding assistant"),
+            ("L3: Task Delegation", "Delegate a complete task and evaluate the resulting artifact", "Process a batch of files and receive a reconciliation report", "Delegate a small issue and receive code changes, tests, and a summary"),
+            ("L4: Spec-Driven AI Team", "Write acceptance criteria, configure roles and handoffs, and review plans and results", "Ask agents to build a utility from business requirements, then verify it and deliver instructions", "Give agents a specification, request implementation and tests, and review the work in an isolated workspace"),
+            ("L5: Software Factory Lab", "Configure a workflow that accepts goals, implements, tests, packages, and handles exceptions", "Use a new business specification to trigger creation or revision of an office utility and validate it with business examples", "Use a new specification to trigger a pipeline that creates or updates a tool, runs acceptance tests, and packages a qualified build in a sandbox"),
         ],
+        "level_headers": ("Level", "Learner role and new capability", "Non-technical track", "Technical track"),
         "schedule_kind": "weeks",
     },
     {
@@ -111,12 +116,12 @@ COURSES = [
             ],
             "hours": "2 hours / session",
         },
-        "title": "Math for ML & DL",
+        "title": "Math for ML and DL",
         "tagline": "Understand the math. Unlock the models.",
         "audience": "Learners preparing for ML, DL, research reading, or stronger mathematical foundations.",
         "capability": "Represent and reason about ML and DL concepts mathematically.",
         "prereq": "High school algebra, functions, and basic Python.",
-        "goal": "Build mathematical foundations through intuition, formulas, manual calculations, and NumPy. Understand data representation, vector operations, optimization, and uncertainty.",
+        "goal": "Build mathematical foundations through intuition, formulas, manual calculations, and NumPy. Learners understand data representation, vector operations, optimization, and uncertainty. This module prepares them for technical study and research reading. Advanced research mathematics requires further study.",
         "outcome": "A notebook that computes similarity and projections, optimizes a simple function, estimates probabilities, and checks gradients with finite differences.",
         "tools": "CPU notebook workspace, interactive math labs, and solution sessions.",
         "proof": "Mathematics notebook with solutions and correctness checks.",
@@ -127,7 +132,7 @@ COURSES = [
             ("4", "S7: Partial derivatives, gradients, and directional derivatives", "S8: The chain rule, Jacobians, and multivariable differentiation"),
             ("5", "S9: Gradient descent and the effect of step size", "S10: Convexity, curvature, constrained optimization, and regularization"),
             ("6", "S11: Conditional probability, independence, and Bayes' theorem", "S12: Random variables, distributions, expectation, variance, and covariance"),
-            ("7", "S13: Sampling, LLN, CLT, estimation error, and confidence intervals", "S14: Likelihood, MLE, MAP, and their connection to objective functions"),
+            ("7", "S13: Sampling, the law of large numbers, the central limit theorem, estimation error, and confidence intervals", "S14: Likelihood, MLE, MAP, and their connection to objective functions"),
             ("8", "S15: Entropy, cross-entropy, and KL divergence", "S16: Integrated mathematics lab and notebook defense"),
         ],
         "levels": [],
@@ -143,11 +148,11 @@ COURSES = [
         "capability": "Build and evaluate ML models.",
         "prereq": "AE02 competency and basic Python, NumPy, and pandas.",
         "goal": "Build reliable baselines, select data representations, train models, and evaluate them correctly offline. Projects may use tabular data, text classification, or simple retrieval.",
-        "outcome": "A reproducible offline pipeline, benchmark, error report, and model artifact. Explain which data was used for fitting, tuning, and testing.",
+        "outcome": "A reproducible offline pipeline, benchmark, error report, and model artifact. Learners can explain which data was used for fitting, tuning, and testing.",
         "tools": "Prepared ML environment, datasets, experiment tracking, and a list of suitable contributions.",
         "proof": "Benchmark and first contribution package.",
         "weeks": [
-            ("1", "S1: Turn questions into supervised or unsupervised problems, then define targets and baselines", "S2: Train / validation / test splits, including time-based and group-based splits and data leakage"),
+            ("1", "S1: Turn questions into supervised or unsupervised learning problems, then define targets and baselines", "S2: Train, validation, and test sets, including time-based and group-based splits and data leakage"),
             ("2", "S3: Linear regression, fitting, residuals, and prediction", "S4: GD, SGD, feature scaling, and regularization for regression"),
             ("3", "S5: Logistic regression and predictive probabilities", "S6: Regression and classification metrics, thresholds, and imbalanced data"),
             ("4", "S7: Decision trees, splitting, impurity, and overfitting", "S8: Random forests, bagging, and the bias-variance trade-off"),
@@ -168,8 +173,8 @@ COURSES = [
         "audience": "Learners with ML knowledge who want to study DL, NLP, and foundation models.",
         "capability": "Train and adapt neural networks.",
         "prereq": "AE03 competency and an understanding of gradients, overfitting, and offline evaluation.",
-        "goal": "Understand neural networks, build training loops, debug training, and adapt pretrained models. Practice focuses on text and representation learning; CNNs broaden intuition.",
-        "outcome": "A mini language-model checkpoint trained from scratch, an SFT model or adapter, training logs, a model card, and an offline benchmark. Weeks 6–8 GPU labs.",
+        "goal": "Understand neural networks, build training loops, debug training, and adapt pretrained models. Practice focuses on text and representation learning. CNNs provide a contrasting architecture to broaden intuition.",
+        "outcome": "A mini language-model checkpoint trained from scratch, a supervised fine-tuned model or adapter, training logs, a model card, and an offline benchmark. Learners complete the S12 and S13 labs during self-study in weeks 6 to 8 using allocated GPUs. Instructors validate the model size in advance to fit time and budget constraints.",
         "tools": "Individual GPU quota, checkpoint storage, training recipes, and debugging support.",
         "proof": "Checkpoint, adapter, training logs, and model card.",
         "weeks": [
@@ -177,9 +182,9 @@ COURSES = [
             ("2", "S3: Backpropagation and the chain rule in neural networks", "S4: Training loops, data loaders, batching, and checkpoints"),
             ("3", "S5: Momentum, Adam, and learning-rate schedules", "S6: Initialization, normalization, dropout, and regularization"),
             ("4", "S7: Debugging gradients and learning curves, then overfitting one batch", "S8: CNNs and transfer learning through a small image task"),
-            ("5", "S9: Tokenization, embeddings, and sequence representation", "S10: Attention: queries, keys, values, and masking"),
-            ("6", "S11: Transformer encoders, decoders, and token positions", "S12: Language modeling, pretraining, token generation — launch mini LM lab"),
-            ("7", "S13: Supervised fine-tuning and PEFT / LoRA with a small model", "S14: Contrastive learning and embedding training"),
+            ("5", "S9: Tokenization, embeddings, and sequence representation", "S10: Attention, including queries, keys, values, and masking"),
+            ("6", "S11: Transformer encoders, decoders, and token positions", "S12: Language modeling, pretraining objectives, token generation, and launch of a mini language-model training lab"),
+            ("7", "S13: Supervised fine-tuning and PEFT or LoRA practice with a small model", "S14: Contrastive learning and embedding training"),
             ("8", "S15: Model ablation, memory and compute profiling, and baseline comparison", "S16: Demo, error analysis, and model card defense"),
         ],
         "levels": [],
@@ -189,33 +194,33 @@ COURSES = [
         "slug": "ae05",
         "code": "AE05",
         "months": "Months 9–10",
-        "title": "ML & GenAI System Design",
+        "title": "ML and GenAI System Design",
         "tagline": "Design for production. Defend every trade-off.",
         "audience": "Software, AI, and ML engineers preparing for system design interviews or production AI work.",
         "capability": "Design ML and GenAI systems under product constraints.",
-        "prereq": "AE03 and AE04 competency, plus API, HTTP, SQL, and Git. A pre-module assignment checks containers, queues, and basic distributed systems.",
-        "goal": "Design, present, and validate an ML or GenAI architecture under product constraints. Supports both production work and ML / AI system design interviews.",
-        "outcome": "Time-limited lab demo, design document, and operations report. Defend diagrams, estimates, and trade-offs.",
+        "prereq": "AE03 and AE04 competency, plus API, HTTP, SQL, and Git knowledge. A pre-module assignment checks familiarity with containers, queues, and basic distributed systems.",
+        "goal": "Learners design, present, and validate an ML or GenAI architecture under product constraints. The module supports both production work and ML or AI system design interviews.",
+        "outcome": "Time-limited lab demo, design document, and operations report.",
         "tools": "Deployment sandbox, API budget, load-testing tools, and monitoring tools.",
-        "proof": "Demo, design document, and operations report.",
+        "proof": "Time-limited lab demo, design document, and operations report.",
         "weeks": [],
         "sessions": [
-            ("S1", "Define the problem and product constraints", "Define users, workflows, scale, and budget. Record assumptions and assess whether ML is necessary"),
-            ("S2", "Connect model quality to product outcomes", "Build an objective tree with business goals, offline metrics, and operational limits"),
-            ("S3", "Draft the minimum architecture", "Draw request and training flows. Define interfaces and independently replaceable components"),
-            ("S4", "Design data sources and flows", "Data contracts, labeling, storage, and lineage. Handle late data and schema changes"),
-            ("S5", "Organize features in the system", "Where and when features are computed and versioned. Point-in-time correctness and serving consistency"),
-            ("S6", "Model development and acceptance", "Use AE03–AE04 benchmarks to select a model. Training jobs, registry, reproducibility, release criteria"),
-            ("S7", "Design the prediction service", "API contract and latency budget. Synchronous or asynchronous serving"),
-            ("S8", "Validate online and release", "Experiment groups, guardrail metrics, stopping criteria, and rollback paths"),
-            ("S9", "Scale and maintain the system", "Capacity plan, alerts, incident responsibilities, and update rules"),
-            ("S10", "GenAI: model and knowledge strategy", "Decision record: retrieval, long context, adaptation, tool use; API vs self-hosting"),
-            ("S11", "GenAI: verifiable RAG", "Index updates, hybrid retrieval, reranking, citations; expired documents and permissions"),
-            ("S12", "GenAI: budget for inference", "Caching, batching, routing, precision. Time to first token vs total completion time"),
-            ("S13", "GenAI: quality evaluation", "Eval set, calibrate judges with human labels, block regressions before release"),
-            ("S14", "GenAI: operations and execution boundaries", "Failure budgets, sensitive data, retries, idempotency, traces, tool contracts"),
-            ("S15", "ML case study: recommendation or ranking", "Apply all nine steps, defend diagrams and estimates, load-test a deployed slice"),
-            ("S16", "GenAI case study: mock interview", "Present an LLM/RAG system under changing requirements; quality, latency, cost, operations"),
+            ("S1", "Step 1: Define the problem and product constraints", "Define users, workflows, scale, and budget. Record assumptions that need validation and assess whether ML is necessary"),
+            ("S2", "Step 2: Connect model quality to product outcomes", "Build an objective tree with business goals, offline metrics, and operational limits. Explain conflicts between metrics"),
+            ("S3", "Step 3: Draft the minimum architecture", "Draw request and training flows. Define interfaces and independently replaceable components"),
+            ("S4", "Step 4: Design data sources and flows", "Create data contracts, labeling plans, storage, and lineage. Handle late data and schema changes"),
+            ("S5", "Step 5: Organize features in the system", "Specify where and when features are computed and versioned. Check point-in-time correctness and serving consistency"),
+            ("S6", "Step 6: Make model development and acceptance decisions", "Use AE03 and AE04 benchmarks to select a model. Design training jobs, a registry, reproducibility controls, and release criteria"),
+            ("S7", "Step 7: Design the prediction service", "Define an API contract and per-component latency budget. Choose synchronous or asynchronous serving for each use case"),
+            ("S8", "Step 8: Validate online and release a version", "Design experiment groups, guardrail metrics, stopping criteria, and rollback paths"),
+            ("S9", "Step 9: Scale and maintain the system", "Create a capacity plan, alerts, incident responsibilities, and data or model update rules. Validate them against compute limits"),
+            ("S10", "GenAI: Select a model and knowledge strategy", "Write a decision record comparing retrieval, long context, model adaptation, and tool-provided data. Choose an API or self-hosting under stated constraints"),
+            ("S11", "GenAI: Design verifiable RAG", "Design index updates, hybrid retrieval, reranking, and citations. Test expired documents and insufficient user permissions"),
+            ("S12", "GenAI: Budget for inference", "Compare caching, batching, routing, and precision on a given workload. Separate time to first token from total completion time"),
+            ("S13", "GenAI: Design quality evaluation", "Create cases with reference answers or criteria, calibrate judges with human labels, and block regressions before release"),
+            ("S14", "GenAI: Design operations and execution boundaries", "Review failure budgets, sensitive data, and access requirements. Define retries, idempotency, traces, and tool contracts for an agent treated as an external component"),
+            ("S15", "ML case study: Recommendation or ranking", "Apply all nine steps, defend diagrams and estimates, and load-test a deployed slice to validate assumptions"),
+            ("S16", "GenAI case study: Mock interview and design defense", "Present an LLM or RAG system under changing requirements. Explain the effects on quality, latency, cost, and operations"),
         ],
         "levels": [],
         "schedule_kind": "sessions",
@@ -228,20 +233,16 @@ COURSES = [
         "tagline": "Explore the frontier. Learn to research.",
         "audience": "AI engineers, technical leads, and builders who want research skills, with an optional paper track.",
         "capability": "Conduct applied research on emerging AI topics selected each year.",
-        "prereq": "AE03 and AE04 completed. AE05 helps if you bring a system into the experiments.",
-        "goal": "Research is an engineering skill even if you do not plan to publish. Half the module is seminars on emerging AI topics. The other half: experiment design, practical work, and presentations.",
+        "prereq": "",
+        "goal": "Research is a necessary engineering skill even for learners who do not plan to publish papers. Half of the module consists of seminars on emerging AI topics. The other half develops research skills through experiments, practical work, and presentations.",
         "outcome": "Research report and prototype, with an optional manuscript or contribution package.",
         "tools": "Research sandbox, API budget, GPUs when needed, research clinics, and mentor review.",
-        "proof": "Research report, prototype, and optional paper or contribution package.",
-        "weeks": [
-            ("1–2", "Seminars on this year's frontier: read papers, extract claims, ask questions", "Research skills: question, hypothesis, and experiment scope"),
-            ("3–4", "Design experiments: baseline, metrics, and success criteria", "Reproduce or test a claim; log results and limitations"),
-            ("5–6", "Prototype / ablation on the sandbox and allocated GPUs", "Research clinic: mentor review of direction and evidence"),
-            ("7–8", "Write the research report and present results", "Defense: explain, revise live, and decide the next step"),
-        ],
+        "proof": "Research report and prototype, with an optional manuscript or contribution package.",
+        "weeks": [],
         "levels": [],
-        "schedule_kind": "weeks",
-        "week_headers": ("Weeks", "Focus A", "Focus B"),
+        "schedule_kind": "prose",
+        "schedule_prose": "Research is a necessary engineering skill even for learners who do not plan to publish papers. Half of the module consists of seminars on emerging AI topics. The other half develops research skills through experiments, practical work, and presentations.",
+        "syllabus_heading": "Seminars and research practice.",
     },
 ]
 
@@ -578,7 +579,14 @@ def home() -> str:
     )
 
 
+def blocks(text) -> str:
+    parts = text if isinstance(text, (list, tuple)) else [text]
+    return "".join(f"<p>{p}</p>" for p in parts if p)
+
+
 def schedule_table(course: dict) -> str:
+    if course["schedule_kind"] == "prose":
+        return f'<article class="card">{blocks(course["schedule_prose"])}</article>'
     if course["schedule_kind"] == "sessions":
         rows = "".join(
             f"<tr><th>{a}</th><td><strong>{b}</strong></td><td>{c}</td></tr>"
@@ -588,7 +596,7 @@ def schedule_table(course: dict) -> str:
           <thead><tr><th>Session</th><th>Focus</th><th>Exercise / deliverable</th></tr></thead>
           <tbody>{rows}</tbody>
         </table></div>"""
-    h1, h2, h3 = course.get("week_headers", ("Week", "Session 1", "Session 2"))
+    h1, h2, h3 = course.get("week_headers", ("Week", "First session", "Second session"))
     rows = "".join(
         f"<tr><th>{a}</th><td>{b}</td><td>{c}</td></tr>" for a, b, c in course["weeks"]
     )
@@ -598,15 +606,40 @@ def schedule_table(course: dict) -> str:
     </table></div>"""
 
 
+def levels_table(course: dict) -> str:
+    levels = course.get("levels") or []
+    if not levels:
+        return ""
+    headers = course.get("level_headers")
+    if headers and len(levels[0]) == 4:
+        rows = "".join(
+            f"<tr><th>{a}</th><td>{b}</td><td>{c}</td><td>{d}</td></tr>"
+            for a, b, c, d in levels
+        )
+        th = "".join(f"<th>{h}</th>" for h in headers)
+        return f"""<div class="table-wrap" style="margin-bottom:1.4rem"><table>
+          <thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div>"""
+    rows = "".join(f"<tr><th>{a}</th><td>{b}</td></tr>" for a, b in levels)
+    return f"""<div class="table-wrap" style="margin-bottom:1.4rem"><table>
+      <thead><tr><th>Level</th><th>Capability</th></tr></thead><tbody>{rows}</tbody></table></div>"""
+
+
 def course_page(i: int) -> str:
     c = COURSES[i]
     prev_c = COURSES[i - 1] if i > 0 else None
     next_c = COURSES[i + 1] if i < len(COURSES) - 1 else None
-    levels = ""
-    if c["levels"]:
-        rows = "".join(f"<tr><th>{a}</th><td>{b}</td></tr>" for a, b in c["levels"])
-        levels = f"""<div class="table-wrap" style="margin-bottom:1.4rem"><table>
-          <thead><tr><th>Level</th><th>Capability</th></tr></thead><tbody>{rows}</tbody></table></div>"""
+    levels = levels_table(c)
+    fact_cards = []
+    if c.get("prereq"):
+        fact_cards.append(f'<article class="card"><h3>Prerequisites</h3>{blocks(c["prereq"])}</article>')
+    if c.get("outcome"):
+        fact_cards.append(f'<article class="card"><h3>Outcomes</h3>{blocks(c["outcome"])}</article>')
+    if c.get("audience"):
+        fact_cards.append(f'<article class="card"><h3>Audience</h3>{blocks(c["audience"])}</article>')
+    if c.get("capability"):
+        fact_cards.append(f'<article class="card"><h3>Core capability</h3>{blocks(c["capability"])}</article>')
+    facts = "\n    ".join(fact_cards)
+    syllabus_h2 = c.get("syllabus_heading", "16 sessions in 8 weeks.")
     pager = '<div class="pager">'
     if prev_c:
         pager += f'<a href="../{prev_c["slug"]}/"><small>Previous</small><strong>{prev_c["code"]} · {prev_c["title"]}</strong></a>'
@@ -643,23 +676,20 @@ def course_page(i: int) -> str:
 </section>
 <section>
   <div class="wrap split">
-    <article class="card"><h3>Prerequisites</h3><p>{c["prereq"]}</p></article>
-    <article class="card"><h3>Outcomes</h3><p>{c["outcome"]}</p></article>
-    <article class="card"><h3>Audience</h3><p>{c["audience"]}</p></article>
-    <article class="card"><h3>Core capability</h3><p>{c["capability"]}</p></article>
+    {facts}
   </div>
 </section>
 <section>
   <div class="wrap">
-    <div class="section-head"><div class="kicker">Syllabus</div><h2>16 sessions in 8 weeks.</h2></div>
+    <div class="section-head"><div class="kicker">Syllabus</div><h2>{syllabus_h2}</h2></div>
     {levels}
     {schedule_table(c)}
   </div>
 </section>
 <section>
   <div class="wrap split">
-    <article class="card"><div class="icon-pill">Lab</div><h3>Tools &amp; access</h3><p>{c["tools"]}</p></article>
-    <article class="card"><div class="icon-pill">CV</div><h3>Evidence you keep</h3><p>{c["proof"]}</p></article>
+    <article class="card"><div class="icon-pill">Lab</div><h3>Tools &amp; access</h3>{blocks(c["tools"])}</article>
+    <article class="card"><div class="icon-pill">CV</div><h3>Evidence you keep</h3>{blocks(c["proof"])}</article>
   </div>
   {pager}
 </section>
