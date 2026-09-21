@@ -261,6 +261,33 @@ def diagram_figure(filename: str, alt: str, prefix: str) -> str:
     return f'<figure class="diagram reveal"><img src="{prefix}assets/img/diagrams/{filename}" alt="{alt}"></figure>'
 
 
+def course_cover_src(c: dict, prefix: str) -> str:
+    return f'{prefix}assets/img/courses/{c["slug"]}-cover.png'
+
+
+def course_cover_figure(c: dict, prefix: str) -> str:
+    return (
+        f'<figure class="course-cover reveal">'
+        f'<img src="{course_cover_src(c, prefix)}" alt="{c["code"]} — {c["title"]}" width="1280" height="720">'
+        f"</figure>"
+    )
+
+
+def course_card_html(c: dict, href: str, prefix: str, meta: str) -> str:
+    return f"""<a class="course-card reveal" href="{href}">
+  <div class="course-thumb">
+    <img src="{course_cover_src(c, prefix)}" alt="" width="1280" height="720">
+    <span class="hex">{c["code"]}</span>
+  </div>
+  <div class="course-card-body">
+    <div class="meta">{meta}</div>
+    <h3>{c["title"]}</h3>
+    <p>{c["tagline"]}</p>
+  </div>
+  <span class="go" aria-hidden="true">→</span>
+</a>"""
+
+
 def nav(prefix: str, active: str) -> str:
     def item(key: str, href: str, label: str, hot: bool = False) -> str:
         cls = []
@@ -441,15 +468,7 @@ def course_when(c: dict) -> str:
 
 def home() -> str:
     cards = "\n".join(
-        f"""<a class="course-card reveal" href="khoa-hoc/{c['slug']}/">
-  <div class="hex">{c['code']}</div>
-  <div>
-    <div class="meta">{course_when(c)}</div>
-    <h3>{c['title']}</h3>
-    <p>{c['tagline']}</p>
-  </div>
-  <span class="go" aria-hidden="true">→</span>
-</a>"""
+        course_card_html(c, f'khoa-hoc/{c["slug"]}/', "", course_when(c))
         for c in COURSES
     )
     body = f"""
@@ -602,16 +621,19 @@ def course_page(i: int) -> str:
     )
     body = f"""
 <section class="page-hero">
-  <div class="wrap">
-    <p class="crumbs"><a href="../../index.html">Trang chủ</a> / <a href="../">Khoá học</a> / {c["code"]}</p>
-    <div class="chips">{chips}</div>
-    <p class="tagline-en" style="margin-top:1rem">{c["tagline"]}</p>
-    <h1>{c["code"]} — {c["title"]}</h1>
-    <p class="lede">{c["goal"]}</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="{MSG}" target="_blank" rel="noopener">Tư vấn học phần này</a>
-      <a class="btn btn-ghost" href="../../lich-khai-giang/">Lịch khai giảng</a>
+  <div class="wrap course-hero-grid">
+    <div>
+      <p class="crumbs"><a href="../../index.html">Trang chủ</a> / <a href="../">Khoá học</a> / {c["code"]}</p>
+      <div class="chips">{chips}</div>
+      <p class="tagline-en" style="margin-top:1rem">{c["tagline"]}</p>
+      <h1>{c["code"]} — {c["title"]}</h1>
+      <p class="lede">{c["goal"]}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{MSG}" target="_blank" rel="noopener">Tư vấn học phần này</a>
+        <a class="btn btn-ghost" href="../../lich-khai-giang/">Lịch khai giảng</a>
+      </div>
     </div>
+    {course_cover_figure(c, "../../")}
   </div>
 </section>
 <section>
@@ -654,15 +676,12 @@ def course_page(i: int) -> str:
 
 def courses_index() -> str:
     cards = "\n".join(
-        f"""<a class="course-card reveal" href="{c['slug']}/">
-  <div class="hex">{c['code']}</div>
-  <div>
-    <div class="meta">{course_when(c)} · {c['capability']}</div>
-    <h3>{c['title']}</h3>
-    <p>{c['tagline']}</p>
-  </div>
-  <span class="go" aria-hidden="true">→</span>
-</a>"""
+        course_card_html(
+            c,
+            f"{c['slug']}/",
+            "../",
+            f"{course_when(c)} · {c['capability']}",
+        )
         for c in COURSES
     )
     body = f"""
@@ -747,6 +766,8 @@ def schedule() -> str:
             cards.append(
                 f"""<article class="sched-card is-open reveal">
   <a class="sched-main" href="../khoa-hoc/{c["slug"]}/">
+    <img class="sched-cover" src="{course_cover_src(c, "../")}" alt="" width="1280" height="720">
+    <div class="sched-copy">
     <div class="when">Khai giảng {intake["start"]}</div>
     <span class="soon">Đang mở đăng ký</span>
     <h3>{c["code"]} · {c["title"]}</h3>
@@ -754,6 +775,7 @@ def schedule() -> str:
     <ul class="slots">{slots}</ul>
     <p>16 sessions · 8 weeks · {intake["hours"]}</p>
     <p class="sched-go">Xem syllabus →</p>
+    </div>
   </a>
   <div class="open"><a class="btn btn-primary" href="{MSG}" target="_blank" rel="noopener">Đăng ký qua Messenger</a></div>
 </article>"""
@@ -762,11 +784,14 @@ def schedule() -> str:
             cards.append(
                 f"""<article class="sched-card reveal">
   <a class="sched-main" href="../khoa-hoc/{c["slug"]}/">
+    <img class="sched-cover" src="{course_cover_src(c, "../")}" alt="" width="1280" height="720">
+    <div class="sched-copy">
     <div class="when">{c["months"]} · Sắp công bố</div>
     <h3>{c["code"]} · {c["title"]}</h3>
     <p>{c["tagline"]}</p>
     <p>16 sessions · 8 weeks · GMT+7</p>
     <p class="sched-go">Xem syllabus →</p>
+    </div>
   </a>
   <div class="open"><a class="btn btn-ghost" href="{MSG}" target="_blank" rel="noopener">Nhận lịch khai giảng</a></div>
 </article>"""
