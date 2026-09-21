@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="EngineerPro AI">
+  <polygon points="174.51,166.00 320.00,82.00 465.49,166.00 465.49,334.00 320.00,418.00 174.51,334.00 206.52,315.52 320.00,381.04 433.48,315.52 433.48,184.48 320.00,118.96 206.52,184.48" fill="#1862FF"/>
+  <polygon points="222.52,193.72 320.00,137.44 417.48,193.72 417.48,306.28 320.00,362.56 222.52,306.28 254.53,287.80 320.00,325.60 385.47,287.80 385.47,212.20 320.00,174.40 254.53,212.20" fill="#1862FF"/>
+  <polygon points="270.53,221.44 320.00,192.88 369.47,221.44 369.47,278.56 320.00,307.12 270.53,278.56 302.54,260.08 320.00,270.16 337.46,260.08 337.46,239.92 320.00,229.84 302.54,239.92" fill="#1862FF"/>
+  <text x="320" y="500" text-anchor="middle" fill="#1862FF"
+        font-family="ui-sans-serif, system-ui, sans-serif" font-size="52"
+        font-weight="700" letter-spacing="10">ENGINEERPRO</text>
+  <text x="320" y="568" text-anchor="middle" fill="#1862FF"
+        font-family="ui-sans-serif, system-ui, sans-serif" font-size="52"
+        font-weight="700" letter-spacing="14">AI</text>
+</svg>

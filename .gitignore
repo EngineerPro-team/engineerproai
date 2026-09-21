@@ -1,0 +1,4 @@
+.DS_Store
+*.pyc
+__pycache__/
+docs/assets/img/_preview/

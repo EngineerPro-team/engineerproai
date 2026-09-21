@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AE04 — Deep Learning Foundations | EngineerPro AI</title>
+  <meta name="description" content="Build, train, and adapt neural models. Hiểu cơ chế neural network, tự xây training loop, debug quá trình học và thích nghi mô hình pretrained. Tập trung text và representation lea">
+  <link rel="canonical" href="https://engineerpro-team.github.io/engineerproai/khoa-hoc/ae04/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EngineerPro AI">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="AE04 — Deep Learning Foundations | EngineerPro AI">
+  <meta property="og:description" content="Build, train, and adapt neural models. Hiểu cơ chế neural network, tự xây training loop, debug quá trình học và thích nghi mô hình pretrained. Tập trung text và representation lea">
+  <meta property="og:url" content="https://engineerpro-team.github.io/engineerproai/khoa-hoc/ae04/">
+  <meta property="og:image" content="https://engineerpro-team.github.io/engineerproai/assets/img/og-share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AE04 — Deep Learning Foundations | EngineerPro AI">
+  <meta name="twitter:description" content="Build, train, and adapt neural models. Hiểu cơ chế neural network, tự xây training loop, debug quá trình học và thích nghi mô hình pretrained. Tập trung text và representation lea">
+  <meta name="twitter:image" content="https://engineerpro-team.github.io/engineerproai/assets/img/og-share.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="header" data-header>
+  <div class="header-inner">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo-mark.svg" alt="">
+      <span><b>ENGINEERPRO</b><small>AI / ML Accelerator</small></span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Mở menu">
+      <span></span>
+    </button>
+    <nav class="nav" id="site-nav" data-nav-panel>
+      <a href="../../index.html">Trang chủ</a>
+      <a href="../../khoa-hoc/" class="is-active">Khoá học</a>
+      <a href="../../lich-khai-giang/" class="nav-hot">Lịch khai giảng</a>
+      <a href="../../giang-vien/">Giảng viên</a>
+      <a class="btn btn-primary" href="https://m.me/EngineerProAI" target="_blank" rel="noopener">Tư vấn Messenger</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="../../index.html">Trang chủ</a> / <a href="../">Khoá học</a> / AE04</p>
+    <div class="chips"><span class="chip">AE04</span><span class="chip">Tháng 7–8</span><span class="chip">16 buổi · 8 tuần</span><span class="chip">Mentor Big Tech</span></div>
+    <p class="tagline-en" style="margin-top:1rem">Build, train, and adapt neural models.</p>
+    <h1>AE04 — Deep Learning Foundations</h1>
+    <p class="lede">Hiểu cơ chế neural network, tự xây training loop, debug quá trình học và thích nghi mô hình pretrained. Tập trung text và representation learning; CNN là kiến trúc bổ sung.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://m.me/EngineerProAI" target="_blank" rel="noopener">Tư vấn học phần này</a>
+      <a class="btn btn-ghost" href="../../lich-khai-giang/">Lịch khai giảng</a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <figure class="diagram reveal"><img src="../../assets/img/diagrams/ae04-dl.svg" alt="Lộ trình deep learning AE04"></figure>
+  </div>
+</section>
+<section>
+  <div class="wrap split">
+    <article class="card"><h3>Đầu vào</h3><p>Đạt chuẩn AE03; hiểu gradient, overfitting và đánh giá offline.</p></article>
+    <article class="card"><h3>Đầu ra</h3><p>Checkpoint mini language model huấn luyện từ đầu, adapter hoặc mô hình đã SFT, training log, model card và benchmark offline. Lab tuần 6–8 chạy trên GPU.</p></article>
+    <article class="card"><h3>Phù hợp với</h3><p>Người đã biết ML, muốn học DL, NLP và foundation models.</p></article>
+    <article class="card"><h3>Năng lực cốt lõi</h3><p>Huấn luyện và thích nghi neural network.</p></article>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Syllabus</div><h2>16 buổi trong 8 tuần.</h2></div>
+    
+    <div class="table-wrap"><table>
+      <thead><tr><th>Tuần</th><th>Buổi 1</th><th>Buổi 2</th></tr></thead>
+      <tbody><tr><th>1</th><td>B1. PyTorch, tensor, broadcasting, device và autograd</td><td>B2. MLP, layer, activation, forward pass và loss</td></tr><tr><th>2</th><td>B3. Backpropagation và chain rule cho neural network</td><td>B4. Training loop, data loader, batching và checkpoint</td></tr><tr><th>3</th><td>B5. Momentum, Adam và learning-rate schedule</td><td>B6. Initialization, normalization, dropout và regularization</td></tr><tr><th>4</th><td>B7. Debug training qua gradient, learning curve và overfit một batch</td><td>B8. CNN và transfer learning với bài tập ảnh nhỏ</td></tr><tr><th>5</th><td>B9. Tokenization, embedding và biểu diễn chuỗi</td><td>B10. Attention: query, key, value và masking</td></tr><tr><th>6</th><td>B11. Transformer, encoder, decoder và vị trí token</td><td>B12. Language modeling, pretraining, sinh token — bắt đầu mini LM</td></tr><tr><th>7</th><td>B13. Supervised fine-tuning và PEFT/LoRA với mô hình nhỏ</td><td>B14. Contrastive learning và huấn luyện embedding</td></tr><tr><th>8</th><td>B15. Ablation, profiling bộ nhớ/tính toán và so sánh baseline</td><td>B16. Demo, error analysis và bảo vệ model card</td></tr></tbody>
+    </table></div>
+  </div>
+</section>
+<section>
+  <div class="wrap split">
+    <article class="card"><div class="icon-pill">Lab</div><h3>Công cụ & quyền lợi</h3><p>GPU quota cá nhân, nơi lưu checkpoint, training recipe và hỗ trợ debug.</p></article>
+    <article class="card"><div class="icon-pill">CV</div><h3>Minh chứng giữ lại</h3><p>Checkpoint, adapter, training log và model card.</p></article>
+  </div>
+  <div class="pager"><a href="../ae03/"><small>Học phần trước</small><strong>AE03 · Machine Learning Foundations</strong></a><a href="../ae05/" style="text-align:right"><small>Học phần sau</small><strong>AE05 · ML & GenAI System Design</strong></a></div>
+</section>
+</main>
+  <footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="../../index.html">
+        <img src="../../assets/img/logo-mark.svg" alt="">
+        <span><b>ENGINEERPRO</b><small>AI / ML Accelerator</small></span>
+      </a>
+      <p style="margin-top:1rem">Một năm học AI Engineering với công cụ trả phí, GPU, lab huấn luyện mô hình và lộ trình đóng góp open source có mentor review.</p>
+    </div>
+    <div>
+      <h3>Sáu học phần</h3>
+      <ul><li><a href="../../khoa-hoc/ae01/">AE01 · AI Productivity & Harnesses</a></li><li><a href="../../khoa-hoc/ae02/">AE02 · Math for ML & DL</a></li><li><a href="../../khoa-hoc/ae03/">AE03 · Machine Learning Foundations</a></li><li><a href="../../khoa-hoc/ae04/">AE04 · Deep Learning Foundations</a></li><li><a href="../../khoa-hoc/ae05/">AE05 · ML & GenAI System Design</a></li><li><a href="../../khoa-hoc/ae06/">AE06 · Frontier AI Lab</a></li></ul>
+    </div>
+    <div>
+      <h3>Liên hệ</h3>
+      <ul>
+        <li><a href="https://m.me/EngineerProAI" target="_blank" rel="noopener">Nhắn Messenger</a></li>
+        <li><a href="https://www.facebook.com/EngineerProAI" target="_blank" rel="noopener">Facebook EngineerPro AI</a></li>
+        <li><a href="../../lich-khai-giang/">Lịch khai giảng</a></li>
+        <li><a href="../../giang-vien/">Giảng viên Big Tech</a></li>
+        <li><a href="../../khoa-hoc/">Lộ trình 6 khoá</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>© <span data-year></span> EngineerPro AI</span>
+    <span>Learn with the tools. Train on GPUs. Contribute to real projects.</span>
+  </div>
+</footer>
+  <a class="msg-fab" href="https://m.me/EngineerProAI" target="_blank" rel="noopener" aria-label="Nhắn tin tư vấn qua Messenger">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="M.001 11.639C.001 4.949 5.241 0 12.001 0 18.762 0 24 4.95 24 11.639c0 6.689-5.238 11.638-11.999 11.638-1.21 0-2.38-.16-3.47-.46a.96.96 0 00-.64.05l-2.39 1.05a.96.96 0 01-1.35-.85l-.07-2.14a.97.97 0 00-.32-.68A11.39 11.39 0 010 11.639zm8.32-2.19l-3.52 5.6c-.35.53.32 1.139.82.75l3.79-2.87a.724.724 0 01.87 0l2.8 2.1c.84.63 2.04.41 2.6-.48l3.52-5.6c.35-.53-.32-1.13-.82-.75l-3.79 2.87a.724.724 0 01-.87 0l-2.8-2.1a1.8 1.8 0 00-2.6.48z"/>
+  </svg>
+</a>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

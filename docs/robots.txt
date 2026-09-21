@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://engineerpro-team.github.io/engineerproai/sitemap.xml
