@@ -48,86 +48,86 @@ PEOPLE = [
     },
 ]
 DIAGRAMS = {
-    "ae01": ("ae01-levels.svg", "Thang năng lực AE01 từ L0 đến L5"),
-    "ae02": ("ae02-math.svg", "Bốn trụ toán của AE02"),
-    "ae03": ("ae03-pipeline.svg", "Pipeline machine learning AE03"),
-    "ae04": ("ae04-dl.svg", "Lộ trình deep learning AE04"),
-    "ae05": ("ae05-system.svg", "Thiết kế hệ thống ML và GenAI AE05"),
-    "ae06": ("ae06-research.svg", "Vòng nghiên cứu ứng dụng AE06"),
+    "ae01": ("ae01-levels.svg", "AE01 capability ladder from L0 to L5"),
+    "ae02": ("ae02-math.svg", "Four math pillars of AE02"),
+    "ae03": ("ae03-pipeline.svg", "AE03 machine learning pipeline"),
+    "ae04": ("ae04-dl.svg", "AE04 deep learning path"),
+    "ae05": ("ae05-system.svg", "AE05 ML and GenAI system design"),
+    "ae06": ("ae06-research.svg", "AE06 applied research loop"),
 }
 
 COURSES = [
     {
         "slug": "ae01",
         "code": "AE01",
-        "months": "Tháng 1–2",
+        "months": "Months 1–2",
         "intake": {
             "start": "25/11/2026",
             "slots": [
-                "Tối Thứ Tư 20:30–22:30 GMT+7",
-                "Chiều Chủ Nhật 14:00–16:00 GMT+7",
+                "Wed 20:30–22:30 GMT+7",
+                "Sun 14:00–16:00 GMT+7",
             ],
-            "hours": "2 giờ / buổi",
+            "hours": "2 hours / session",
         },
         "title": "AI Productivity & Harnesses",
         "tagline": "Work with AI like an engineer at Big Tech.",
-        "audience": "PM, BA, vận hành, marketer, knowledge worker và developer muốn tăng năng suất.",
-        "capability": "Đi từ L0 đến L5: hỗ trợ cá nhân, giao việc, điều phối và vận hành workflow AI.",
-        "prereq": "Biết dùng máy tính, file và ứng dụng văn phòng. Nhánh non-tech không yêu cầu lập trình. Nhánh kỹ thuật dành cho người đọc và sửa được code.",
-        "goal": "Dùng AI để hoàn thành công việc và tăng năng suất đo được. Thực hành với tài liệu, bảng dữ liệu, thông tin công việc và AI coding để tạo tiện ích cho nhu cầu thật.",
-        "outcome": "Chọn việc phù hợp để giao AI, cộng tác ở nhiều mức tự chủ, tạo tiện ích bằng AI coding, cấu hình đội agent, vận hành workflow theo mục tiêu và chọn mức tự chủ hợp lý.",
-        "tools": "Tài khoản AI trả phí trong hai tháng, workspace chạy tiện ích, template, hỗ trợ setup. Lab dùng API có ngân sách riêng.",
-        "proof": "Tiện ích, harness, log điều phối, hồ sơ L0–L5 và báo cáo năng suất.",
+        "audience": "Technical and non-technical professionals: PMs, BAs, operations, marketers, knowledge workers, and developers.",
+        "capability": "Progress from L0 to L5 through personal assistance, collaboration, delegation, orchestration, and AI workflow operations.",
+        "prereq": "Basic use of computers, files, and office applications. The non-technical track does not require programming. The technical track is for learners who can read and edit code.",
+        "goal": "Use AI to complete work and achieve measurable productivity gains. Practice with documents, tabular data, workplace information, and AI coding tools to create useful applications.",
+        "outcome": "Identify tasks suitable for AI, collaborate and delegate at different autonomy levels, build utilities with AI coding, configure an agent team, run goal-driven workflows, and select a useful autonomy level for each task.",
+        "tools": "A paid AI seat for two months, a workspace for running utilities, templates, API quota, and setup support.",
+        "proof": "Utilities, harnesses, orchestration logs, an L0–L5 record, and a productivity report.",
         "weeks": [
-            ("1", "B1. L0 — Chọn tác vụ, ghi baseline và tiêu chí hoàn thành", "B2. L1 — Kích hoạt tài khoản, dùng AI cho phần việc nhỏ, kiểm tra lỗi"),
-            ("2", "B3. L2 — Cung cấp yêu cầu, context, ví dụ; cộng tác qua checkpoint", "B4. L2 — AI coding tạo tiện ích nhỏ cho tài liệu hoặc dữ liệu"),
-            ("3", "B5. L2 — Sửa lỗi cùng AI, test nghiệp vụ, lưu phiên bản", "B6. L3 — Chuyển yêu cầu thành nhiệm vụ trọn gói, artifact và nghiệm thu"),
-            ("4", "B7. L3 — Custom harness: instructions, context, skill, template, công cụ, test", "B8. L3 — Agent chạy độc lập trong workspace riêng, thu artifact và log"),
-            ("5", "B9. L3 — Nghiệm thu, thử thiếu dữ liệu, sửa cấu hình", "B10. L4 — Đặc tả nghiệm thu, đội agent, bàn giao và workspace"),
-            ("6", "B11. L4 — Review kế hoạch và giao đội agent thực hiện đặc tả", "B12. L4 — Kiểm tra độc lập, so sánh với single agent"),
-            ("7", "B13. L5 — Software factory: nhận spec, tạo/sửa tiện ích, tự kiểm tra, đóng gói", "B14. L5 — Chạy end-to-end với yêu cầu mới, giới hạn quyền, ngân sách và lỗi"),
-            ("8", "B15. L5 — Productivity audit: tự chủ, thời gian kiểm tra, chất lượng, chi phí", "B16. Capstone không chỉ đạo từng bước, bảo vệ bằng chứng, chọn mức áp dụng"),
+            ("1", "S1, L0: Select a work task, record a baseline, and define completion criteria", "S2, L1: Activate accounts, use AI for small tasks, and check for errors"),
+            ("2", "S3, L2: Provide requirements, context, and examples; build a checkpoint-based collaboration workflow", "S4, L2: Use AI coding to build a small document or data utility"),
+            ("3", "S5, L2: Debug with AI, run business tests, and save versions", "S6, L3: Turn requirements into a delegable task with artifacts and acceptance criteria"),
+            ("4", "S7, L3: Build a custom harness with instructions, context, skills, templates, tools, and tests", "S8, L3: Let an agent complete an independent task in an isolated workspace"),
+            ("5", "S9, L3: Review the result, test missing-data cases, and revise the configuration", "S10, L4: Write acceptance criteria and configure an agent team, handoff contracts, and workspaces"),
+            ("6", "S11, L4: Review the plan and ask the agent team to implement the specification", "S12, L4: Verify independently and compare with a single agent"),
+            ("7", "S13, L5: Configure a software factory to accept specs, build or update utilities, test, and package", "S14, L5: Run a new requirement end to end with permission, budget, and failure limits"),
+            ("8", "S15, L5: Audit autonomy, review time, quality, cost, and productivity trade-offs", "S16, L5: Unguided capstone, defend the evidence, and select a practical adoption level"),
         ],
         "levels": [
-            ("L0 Baseline", "Hiểu việc hiện tại và chọn vấn đề phù hợp"),
-            ("L1 AI Assistance", "Dùng AI hỗ trợ phần việc nhỏ và tự kiểm tra đầu ra"),
-            ("L2 AI Collaboration", "Cung cấp context, trao đổi và chỉnh kết quả qua checkpoint"),
-            ("L3 Task Delegation", "Giao nhiệm vụ trọn gói, nhận artifact và nghiệm thu"),
-            ("L4 Spec-Driven AI Team", "Viết đặc tả nghiệm thu, cấu hình vai trò, bàn giao và review"),
-            ("L5 Software Factory", "Cấu hình quy trình tự triển khai, kiểm thử, đóng gói và xử lý ngoại lệ"),
+            ("L0 Baseline", "Understand the current workflow and select a suitable problem"),
+            ("L1 AI Assistance", "Use AI for small tasks and verify every output"),
+            ("L2 AI Collaboration", "Provide context, discuss requirements, and refine results through checkpoints"),
+            ("L3 Task Delegation", "Delegate a complete task and evaluate the resulting artifact"),
+            ("L4 Spec-Driven AI Team", "Write acceptance criteria, configure roles and handoffs, and review plans and results"),
+            ("L5 Software Factory", "Configure a workflow that implements, tests, packages, and handles exceptions"),
         ],
         "schedule_kind": "weeks",
     },
     {
         "slug": "ae02",
         "code": "AE02",
-        "months": "Tháng 3–4",
+        "months": "Months 3–4",
         "intake": {
             "start": "23/12/2026",
             "slots": [
-                "Tối Thứ Năm 20:30–22:30 GMT+7",
-                "Tối Chủ Nhật 20:30–22:30 GMT+7",
+                "Thu 20:30–22:30 GMT+7",
+                "Sun 20:30–22:30 GMT+7",
             ],
-            "hours": "2 giờ / buổi",
+            "hours": "2 hours / session",
         },
         "title": "Math for ML & DL",
         "tagline": "Understand the math. Unlock the models.",
-        "audience": "Người chuẩn bị học ML/DL, đọc nghiên cứu hoặc củng cố toán cho kỹ thuật AI.",
-        "capability": "Biểu diễn và suy luận bằng toán cho machine learning và deep learning.",
-        "prereq": "Đại số phổ thông, hàm số và Python cơ bản.",
-        "goal": "Xây nền tảng toán theo tiến trình trực giác → công thức → tính tay → NumPy. Hiểu biểu diễn dữ liệu, phép tính vector, tối ưu và bất định.",
-        "outcome": "Notebook tính similarity, projection, tối ưu một hàm đơn giản và ước lượng xác suất. Kiểm tra gradient bằng sai phân hữu hạn.",
-        "tools": "Notebook workspace trên CPU, lab toán tương tác và phiên chữa bài.",
-        "proof": "Notebook toán có lời giải và kiểm tra tính đúng.",
+        "audience": "Learners preparing for ML, DL, research reading, or stronger mathematical foundations.",
+        "capability": "Represent and reason about ML and DL concepts mathematically.",
+        "prereq": "High school algebra, functions, and basic Python.",
+        "goal": "Build mathematical foundations through intuition, formulas, manual calculations, and NumPy. Understand data representation, vector operations, optimization, and uncertainty.",
+        "outcome": "A notebook that computes similarity and projections, optimizes a simple function, estimates probabilities, and checks gradients with finite differences.",
+        "tools": "CPU notebook workspace, interactive math labs, and solution sessions.",
+        "proof": "Mathematics notebook with solutions and correctness checks.",
         "weeks": [
-            ("1", "B1. Scalar, vector, matrix, tensor, shape và biểu diễn dữ liệu", "B2. Dot product, norm, khoảng cách và cosine similarity"),
-            ("2", "B3. Nhân ma trận, biến đổi tuyến tính và hệ phương trình", "B4. Rank, basis, projection và hình học least squares"),
-            ("3", "B5. Eigenvalue, eigenvector và diễn giải hình học", "B6. SVD và xấp xỉ hạng thấp"),
-            ("4", "B7. Đạo hàm riêng, gradient và đạo hàm theo hướng", "B8. Chain rule, Jacobian và vi phân hàm nhiều biến"),
-            ("5", "B9. Gradient descent và ảnh hưởng của bước cập nhật", "B10. Convexity, curvature, tối ưu có ràng buộc và regularization"),
-            ("6", "B11. Xác suất có điều kiện, độc lập và định lý Bayes", "B12. Biến ngẫu nhiên, phân phối, kỳ vọng, phương sai, covariance"),
-            ("7", "B13. Sampling, LLN, CLT, sai số ước lượng và khoảng tin cậy", "B14. Likelihood, MLE, MAP và liên hệ với hàm mục tiêu"),
-            ("8", "B15. Entropy, cross-entropy và KL divergence", "B16. Math lab tổng hợp và bảo vệ notebook"),
+            ("1", "S1: Scalars, vectors, matrices, tensors, shapes, and data representation", "S2: Dot products, norms, distance, and cosine similarity"),
+            ("2", "S3: Matrix multiplication, linear transformations, and systems of equations", "S4: Rank, basis, projection, and least-squares geometry"),
+            ("3", "S5: Eigenvalues, eigenvectors, and geometric interpretation", "S6: SVD and low-rank approximation"),
+            ("4", "S7: Partial derivatives, gradients, and directional derivatives", "S8: The chain rule, Jacobians, and multivariable differentiation"),
+            ("5", "S9: Gradient descent and the effect of step size", "S10: Convexity, curvature, constrained optimization, and regularization"),
+            ("6", "S11: Conditional probability, independence, and Bayes' theorem", "S12: Random variables, distributions, expectation, variance, and covariance"),
+            ("7", "S13: Sampling, LLN, CLT, estimation error, and confidence intervals", "S14: Likelihood, MLE, MAP, and their connection to objective functions"),
+            ("8", "S15: Entropy, cross-entropy, and KL divergence", "S16: Integrated mathematics lab and notebook defense"),
         ],
         "levels": [],
         "schedule_kind": "weeks",
@@ -135,25 +135,25 @@ COURSES = [
     {
         "slug": "ae03",
         "code": "AE03",
-        "months": "Tháng 5–6",
+        "months": "Months 5–6",
         "title": "Machine Learning Foundations",
         "tagline": "Turn data into reliable predictions.",
-        "audience": "Software engineer chuyển sang ML và analyst muốn xây mô hình dự đoán.",
-        "capability": "Xây dựng và đánh giá mô hình machine learning đáng tin cậy.",
-        "prereq": "Đạt chuẩn AE02; Python, NumPy và pandas cơ bản.",
-        "goal": "Xây baseline đáng tin, biểu diễn dữ liệu, huấn luyện mô hình và đánh giá offline đúng cách. Bài toán có thể dùng dữ liệu bảng, phân loại văn bản hoặc tìm kiếm đơn giản.",
-        "outcome": "Pipeline offline chạy lại được, benchmark, báo cáo sai số và model artifact. Giải thích được dữ liệu dùng để fit, tune và test.",
-        "tools": "Môi trường ML cài sẵn, dataset, experiment tracking và danh sách contribution phù hợp.",
-        "proof": "Benchmark và gói đóng góp open source đầu tiên.",
+        "audience": "Software engineers moving into ML and analysts building predictive models.",
+        "capability": "Build and evaluate ML models.",
+        "prereq": "AE02 competency and basic Python, NumPy, and pandas.",
+        "goal": "Build reliable baselines, select data representations, train models, and evaluate them correctly offline. Projects may use tabular data, text classification, or simple retrieval.",
+        "outcome": "A reproducible offline pipeline, benchmark, error report, and model artifact. Explain which data was used for fitting, tuning, and testing.",
+        "tools": "Prepared ML environment, datasets, experiment tracking, and a list of suitable contributions.",
+        "proof": "Benchmark and first contribution package.",
         "weeks": [
-            ("1", "B1. Chuyển câu hỏi thành bài toán supervised/unsupervised, target và baseline", "B2. Train / validation / test, split theo thời gian hoặc nhóm, data leakage"),
-            ("2", "B3. Linear regression, fitting, residual và dự đoán", "B4. GD, SGD, feature scaling và regularization trong regression"),
-            ("3", "B5. Logistic regression và xác suất dự đoán", "B6. Metric hồi quy, phân loại, threshold và dữ liệu mất cân bằng"),
-            ("4", "B7. Decision tree, chia nhánh, impurity và overfitting", "B8. Random forest, bagging và bias-variance"),
-            ("5", "B9. Gradient boosting và baseline cho dữ liệu bảng", "B10. Cross-validation, hyperparameter search và ghi nhận thí nghiệm"),
-            ("6", "B11. Feature transformation, dữ liệu thiếu và preprocessing pipeline", "B12. PCA, chọn số chiều và đánh giá thông tin bị mất"),
-            ("7", "B13. K-means và nearest neighbors", "B14. TF-IDF, retrieval baseline và metric tìm kiếm"),
-            ("8", "B15. Error analysis, calibration và sai số theo nhóm dữ liệu", "B16. Bảo vệ pipeline ML và quyết định chọn mô hình"),
+            ("1", "S1: Turn questions into supervised or unsupervised problems, then define targets and baselines", "S2: Train / validation / test splits, including time-based and group-based splits and data leakage"),
+            ("2", "S3: Linear regression, fitting, residuals, and prediction", "S4: GD, SGD, feature scaling, and regularization for regression"),
+            ("3", "S5: Logistic regression and predictive probabilities", "S6: Regression and classification metrics, thresholds, and imbalanced data"),
+            ("4", "S7: Decision trees, splitting, impurity, and overfitting", "S8: Random forests, bagging, and the bias-variance trade-off"),
+            ("5", "S9: Gradient boosting and tabular-data baselines", "S10: Cross-validation, hyperparameter search, and experiment tracking"),
+            ("6", "S11: Feature transformation, missing data, and preprocessing pipelines", "S12: PCA, dimension selection, and information-loss evaluation"),
+            ("7", "S13: K-means and nearest neighbors", "S14: TF-IDF, retrieval baselines, and search evaluation metrics"),
+            ("8", "S15: Error analysis, calibration, and errors across data groups", "S16: Defend the ML pipeline and model selection decisions"),
         ],
         "levels": [],
         "schedule_kind": "weeks",
@@ -161,25 +161,25 @@ COURSES = [
     {
         "slug": "ae04",
         "code": "AE04",
-        "months": "Tháng 7–8",
+        "months": "Months 7–8",
         "title": "Deep Learning Foundations",
         "tagline": "Build, train, and adapt neural models.",
-        "audience": "Người đã biết ML, muốn học DL, NLP và foundation models.",
-        "capability": "Huấn luyện và thích nghi neural network.",
-        "prereq": "Đạt chuẩn AE03; hiểu gradient, overfitting và đánh giá offline.",
-        "goal": "Hiểu cơ chế neural network, tự xây training loop, debug quá trình học và thích nghi mô hình pretrained. Tập trung text và representation learning; CNN là kiến trúc bổ sung.",
-        "outcome": "Checkpoint mini language model huấn luyện từ đầu, adapter hoặc mô hình đã SFT, training log, model card và benchmark offline. Lab tuần 6–8 chạy trên GPU.",
-        "tools": "GPU quota cá nhân, nơi lưu checkpoint, training recipe và hỗ trợ debug.",
-        "proof": "Checkpoint, adapter, training log và model card.",
+        "audience": "Learners with ML knowledge who want to study DL, NLP, and foundation models.",
+        "capability": "Train and adapt neural networks.",
+        "prereq": "AE03 competency and an understanding of gradients, overfitting, and offline evaluation.",
+        "goal": "Understand neural networks, build training loops, debug training, and adapt pretrained models. Practice focuses on text and representation learning; CNNs broaden intuition.",
+        "outcome": "A mini language-model checkpoint trained from scratch, an SFT model or adapter, training logs, a model card, and an offline benchmark. Weeks 6–8 GPU labs.",
+        "tools": "Individual GPU quota, checkpoint storage, training recipes, and debugging support.",
+        "proof": "Checkpoint, adapter, training logs, and model card.",
         "weeks": [
-            ("1", "B1. PyTorch, tensor, broadcasting, device và autograd", "B2. MLP, layer, activation, forward pass và loss"),
-            ("2", "B3. Backpropagation và chain rule cho neural network", "B4. Training loop, data loader, batching và checkpoint"),
-            ("3", "B5. Momentum, Adam và learning-rate schedule", "B6. Initialization, normalization, dropout và regularization"),
-            ("4", "B7. Debug training qua gradient, learning curve và overfit một batch", "B8. CNN và transfer learning với bài tập ảnh nhỏ"),
-            ("5", "B9. Tokenization, embedding và biểu diễn chuỗi", "B10. Attention: query, key, value và masking"),
-            ("6", "B11. Transformer, encoder, decoder và vị trí token", "B12. Language modeling, pretraining, sinh token — bắt đầu mini LM"),
-            ("7", "B13. Supervised fine-tuning và PEFT/LoRA với mô hình nhỏ", "B14. Contrastive learning và huấn luyện embedding"),
-            ("8", "B15. Ablation, profiling bộ nhớ/tính toán và so sánh baseline", "B16. Demo, error analysis và bảo vệ model card"),
+            ("1", "S1: PyTorch tensor operations, broadcasting, devices, and autograd", "S2: MLP layers, activations, forward passes, and loss"),
+            ("2", "S3: Backpropagation and the chain rule in neural networks", "S4: Training loops, data loaders, batching, and checkpoints"),
+            ("3", "S5: Momentum, Adam, and learning-rate schedules", "S6: Initialization, normalization, dropout, and regularization"),
+            ("4", "S7: Debugging gradients and learning curves, then overfitting one batch", "S8: CNNs and transfer learning through a small image task"),
+            ("5", "S9: Tokenization, embeddings, and sequence representation", "S10: Attention: queries, keys, values, and masking"),
+            ("6", "S11: Transformer encoders, decoders, and token positions", "S12: Language modeling, pretraining, token generation — launch mini LM lab"),
+            ("7", "S13: Supervised fine-tuning and PEFT / LoRA with a small model", "S14: Contrastive learning and embedding training"),
+            ("8", "S15: Model ablation, memory and compute profiling, and baseline comparison", "S16: Demo, error analysis, and model card defense"),
         ],
         "levels": [],
         "schedule_kind": "weeks",
@@ -187,34 +187,34 @@ COURSES = [
     {
         "slug": "ae05",
         "code": "AE05",
-        "months": "Tháng 9–10",
+        "months": "Months 9–10",
         "title": "ML & GenAI System Design",
         "tagline": "Design for production. Defend every trade-off.",
-        "audience": "SWE, AI/ML Engineer chuẩn bị phỏng vấn system design hoặc xây hệ thống AI.",
-        "capability": "Thiết kế hệ thống ML/GenAI theo ràng buộc sản phẩm.",
-        "prereq": "Đạt chuẩn AE03–AE04; biết API, HTTP, SQL và Git. Prework kiểm tra container, queue và hệ thống phân tán cơ bản.",
-        "goal": "Thiết kế, trình bày và kiểm chứng kiến trúc ML/GenAI dưới ràng buộc sản phẩm. Phục vụ cả công việc thực tế và phỏng vấn ML/AI System Design.",
-        "outcome": "Demo có giới hạn thời gian, design document và báo cáo vận hành. Bảo vệ được sơ đồ, ước lượng và trade-off.",
-        "tools": "Deployment sandbox, API budget, công cụ load test và monitoring.",
-        "proof": "Demo, design document và báo cáo vận hành.",
+        "audience": "Software, AI, and ML engineers preparing for system design interviews or production AI work.",
+        "capability": "Design ML and GenAI systems under product constraints.",
+        "prereq": "AE03 and AE04 competency, plus API, HTTP, SQL, and Git. A pre-module assignment checks containers, queues, and basic distributed systems.",
+        "goal": "Design, present, and validate an ML or GenAI architecture under product constraints. Supports both production work and ML / AI system design interviews.",
+        "outcome": "Time-limited lab demo, design document, and operations report. Defend diagrams, estimates, and trade-offs.",
+        "tools": "Deployment sandbox, API budget, load-testing tools, and monitoring tools.",
+        "proof": "Demo, design document, and operations report.",
         "weeks": [],
         "sessions": [
-            ("B1", "Xác định bài toán và ràng buộc sản phẩm", "Chốt người dùng, luồng, quy mô, ngân sách; ghi giả định; cân nhắc có cần ML hay không"),
-            ("B2", "Kết nối chất lượng mô hình với kết quả sản phẩm", "Cây mục tiêu: chỉ số kinh doanh, metric offline, giới hạn vận hành"),
-            ("B3", "Phác thảo kiến trúc tối thiểu", "Request flow và training flow; interface; thành phần thay thế độc lập"),
-            ("B4", "Thiết kế nguồn và dòng dữ liệu", "Data contract, nhãn, lưu trữ, lineage; dữ liệu đến muộn và đổi schema"),
-            ("B5", "Tổ chức feature trong hệ thống", "Nơi và thời điểm tính feature, version, point-in-time, nhất quán khi serving"),
-            ("B6", "Phát triển và chấp nhận mô hình", "Chọn model từ benchmark AE03–AE04; training job, registry, tái lập, điều kiện release"),
-            ("B7", "Thiết kế dịch vụ dự đoán", "API contract, latency budget, serving đồng bộ hoặc bất đồng bộ"),
-            ("B8", "Kiểm chứng online và phát hành", "Nhóm thử nghiệm, guardrail, tiêu chí dừng và rollback"),
-            ("B9", "Mở rộng và duy trì hệ thống", "Capacity, cảnh báo, sự cố, quy tắc cập nhật dữ liệu/model"),
-            ("B10", "GenAI — Chiến lược mô hình và tri thức", "Decision record: retrieval, long context, adaptation, tool use; API hay self-host"),
-            ("B11", "GenAI — RAG có thể kiểm chứng", "Index, hybrid search, rerank, citation; tài liệu hết hạn và quyền truy cập"),
-            ("B12", "GenAI — Ngân sách inference", "Caching, batching, routing, precision; TTFT và thời gian hoàn tất"),
-            ("B13", "GenAI — Đánh giá chất lượng", "Eval set, hiệu chỉnh judge bằng nhãn người, chặn regression trước release"),
-            ("B14", "GenAI — Vận hành và ranh giới thực thi", "Failure budget, dữ liệu nhạy cảm, retry, idempotency, trace, tool contract"),
-            ("B15", "Case study ML — Recommendation hoặc ranking", "Vận dụng 9 bước, bảo vệ sơ đồ và ước lượng, thử tải một phần hệ thống"),
-            ("B16", "Case study GenAI — Mock interview", "Trình bày hệ thống LLM/RAG khi yêu cầu đổi; tác động chất lượng, latency, chi phí, vận hành"),
+            ("S1", "Define the problem and product constraints", "Define users, workflows, scale, and budget. Record assumptions and assess whether ML is necessary"),
+            ("S2", "Connect model quality to product outcomes", "Build an objective tree with business goals, offline metrics, and operational limits"),
+            ("S3", "Draft the minimum architecture", "Draw request and training flows. Define interfaces and independently replaceable components"),
+            ("S4", "Design data sources and flows", "Data contracts, labeling, storage, and lineage. Handle late data and schema changes"),
+            ("S5", "Organize features in the system", "Where and when features are computed and versioned. Point-in-time correctness and serving consistency"),
+            ("S6", "Model development and acceptance", "Use AE03–AE04 benchmarks to select a model. Training jobs, registry, reproducibility, release criteria"),
+            ("S7", "Design the prediction service", "API contract and latency budget. Synchronous or asynchronous serving"),
+            ("S8", "Validate online and release", "Experiment groups, guardrail metrics, stopping criteria, and rollback paths"),
+            ("S9", "Scale and maintain the system", "Capacity plan, alerts, incident responsibilities, and update rules"),
+            ("S10", "GenAI: model and knowledge strategy", "Decision record: retrieval, long context, adaptation, tool use; API vs self-hosting"),
+            ("S11", "GenAI: verifiable RAG", "Index updates, hybrid retrieval, reranking, citations; expired documents and permissions"),
+            ("S12", "GenAI: budget for inference", "Caching, batching, routing, precision. Time to first token vs total completion time"),
+            ("S13", "GenAI: quality evaluation", "Eval set, calibrate judges with human labels, block regressions before release"),
+            ("S14", "GenAI: operations and execution boundaries", "Failure budgets, sensitive data, retries, idempotency, traces, tool contracts"),
+            ("S15", "ML case study: recommendation or ranking", "Apply all nine steps, defend diagrams and estimates, load-test a deployed slice"),
+            ("S16", "GenAI case study: mock interview", "Present an LLM/RAG system under changing requirements; quality, latency, cost, operations"),
         ],
         "levels": [],
         "schedule_kind": "sessions",
@@ -222,25 +222,25 @@ COURSES = [
     {
         "slug": "ae06",
         "code": "AE06",
-        "months": "Tháng 11–12",
+        "months": "Months 11–12",
         "title": "Frontier AI Lab",
         "tagline": "Explore the frontier. Learn to research.",
-        "audience": "AI engineer, technical lead và builder đã có nền tảng AI/ML.",
-        "capability": "Nghiên cứu ứng dụng theo các hướng AI mới của từng năm.",
-        "prereq": "Hoàn thành AE03–AE04; AE05 là lợi thế khi mang hệ thống vào thí nghiệm.",
-        "goal": "Kỹ năng nghiên cứu là kỹ năng kỹ sư — kể cả khi không nhằm công bố paper. Một nửa thời lượng là seminar về chủ đề AI mới. Nửa còn lại: thiết kế thí nghiệm, thực hành và trình bày.",
-        "outcome": "Research report, prototype; tùy chọn manuscript hoặc gói đóng góp open source.",
-        "tools": "Research sandbox, API budget, GPU khi cần, research clinic và mentor review.",
-        "proof": "Research report, prototype và tùy chọn paper/contribution package.",
+        "audience": "AI engineers, technical leads, and builders who want research skills, with an optional paper track.",
+        "capability": "Conduct applied research on emerging AI topics selected each year.",
+        "prereq": "AE03 and AE04 completed. AE05 helps if you bring a system into the experiments.",
+        "goal": "Research is an engineering skill even if you do not plan to publish. Half the module is seminars on emerging AI topics. The other half: experiment design, practical work, and presentations.",
+        "outcome": "Research report and prototype, with an optional manuscript or contribution package.",
+        "tools": "Research sandbox, API budget, GPUs when needed, research clinics, and mentor review.",
+        "proof": "Research report, prototype, and optional paper or contribution package.",
         "weeks": [
-            ("1–2", "Seminar hướng frontier của năm: đọc paper, tóm claim, đặt câu hỏi", "Research skills: câu hỏi nghiên cứu, giả thuyết, phạm vi thí nghiệm"),
-            ("3–4", "Thiết kế thí nghiệm, chọn baseline, metric và tiêu chí thành công", "Tái lập hoặc kiểm tra một claim; ghi log và hạn chế"),
-            ("5–6", "Prototype / ablation trên sandbox và GPU được cấp", "Research clinic: mentor review hướng đi và bằng chứng"),
-            ("7–8", "Viết research report, trình bày kết quả", "Bảo vệ: giải thích, sửa trực tiếp, quyết định bước tiếp theo"),
+            ("1–2", "Seminars on this year's frontier: read papers, extract claims, ask questions", "Research skills: question, hypothesis, and experiment scope"),
+            ("3–4", "Design experiments: baseline, metrics, and success criteria", "Reproduce or test a claim; log results and limitations"),
+            ("5–6", "Prototype / ablation on the sandbox and allocated GPUs", "Research clinic: mentor review of direction and evidence"),
+            ("7–8", "Write the research report and present results", "Defense: explain, revise live, and decide the next step"),
         ],
         "levels": [],
         "schedule_kind": "weeks",
-        "week_headers": ("Giai đoạn", "Trọng tâm A", "Trọng tâm B"),
+        "week_headers": ("Weeks", "Focus A", "Focus B"),
     },
 ]
 
@@ -501,7 +501,7 @@ def home() -> str:
       <div class="kicker">Lộ trình 12 tháng</div>
       <h2>Sáu khoá, mỗi khoá 8 tuần — 4 tuần dự phòng cho lễ, học bù và portfolio.</h2>
     </div>
-    {diagram_figure("roadmap-12.svg", "Lộ trình 12 tháng sáu học phần AE01 đến AE06", "")}
+    {diagram_figure("roadmap-12.svg", "12-month path, six modules AE01 to AE06", "")}
     <div class="path">{cards}</div>
   </div>
 </section>
@@ -551,10 +551,10 @@ def schedule_table(course: dict) -> str:
             for a, b, c in course["sessions"]
         )
         return f"""<div class="table-wrap"><table>
-          <thead><tr><th>Buổi</th><th>Trọng tâm</th><th>Bài tập / đầu ra</th></tr></thead>
+          <thead><tr><th>Session</th><th>Focus</th><th>Exercise / deliverable</th></tr></thead>
           <tbody>{rows}</tbody>
         </table></div>"""
-    h1, h2, h3 = course.get("week_headers", ("Tuần", "Buổi 1", "Buổi 2"))
+    h1, h2, h3 = course.get("week_headers", ("Week", "Session 1", "Session 2"))
     rows = "".join(
         f"<tr><th>{a}</th><td>{b}</td><td>{c}</td></tr>" for a, b, c in course["weeks"]
     )
@@ -572,18 +572,18 @@ def course_page(i: int) -> str:
     if c["levels"]:
         rows = "".join(f"<tr><th>{a}</th><td>{b}</td></tr>" for a, b in c["levels"])
         levels = f"""<div class="table-wrap" style="margin-bottom:1.4rem"><table>
-          <thead><tr><th>Cấp độ</th><th>Năng lực</th></tr></thead><tbody>{rows}</tbody></table></div>"""
+          <thead><tr><th>Level</th><th>Capability</th></tr></thead><tbody>{rows}</tbody></table></div>"""
     pager = '<div class="pager">'
     if prev_c:
-        pager += f'<a href="../{prev_c["slug"]}/"><small>Học phần trước</small><strong>{prev_c["code"]} · {prev_c["title"]}</strong></a>'
+        pager += f'<a href="../{prev_c["slug"]}/"><small>Previous</small><strong>{prev_c["code"]} · {prev_c["title"]}</strong></a>'
     else:
         pager += "<span></span>"
     if next_c:
-        pager += f'<a href="../{next_c["slug"]}/" style="text-align:right"><small>Học phần sau</small><strong>{next_c["code"]} · {next_c["title"]}</strong></a>'
+        pager += f'<a href="../{next_c["slug"]}/" style="text-align:right"><small>Next</small><strong>{next_c["code"]} · {next_c["title"]}</strong></a>'
     pager += "</div>"
     chips = "".join(
         f'<span class="chip">{x}</span>'
-        for x in (c["code"], course_when(c), "16 buổi · 8 tuần", "Mentor Big Tech")
+        for x in (c["code"], course_when(c), "16 sessions · 8 weeks", "Mentor Big Tech")
     )
     body = f"""
 <section class="page-hero">
@@ -606,23 +606,23 @@ def course_page(i: int) -> str:
 </section>
 <section>
   <div class="wrap split">
-    <article class="card"><h3>Đầu vào</h3><p>{c["prereq"]}</p></article>
-    <article class="card"><h3>Đầu ra</h3><p>{c["outcome"]}</p></article>
-    <article class="card"><h3>Phù hợp với</h3><p>{c["audience"]}</p></article>
-    <article class="card"><h3>Năng lực cốt lõi</h3><p>{c["capability"]}</p></article>
+    <article class="card"><h3>Prerequisites</h3><p>{c["prereq"]}</p></article>
+    <article class="card"><h3>Outcomes</h3><p>{c["outcome"]}</p></article>
+    <article class="card"><h3>Audience</h3><p>{c["audience"]}</p></article>
+    <article class="card"><h3>Core capability</h3><p>{c["capability"]}</p></article>
   </div>
 </section>
 <section>
   <div class="wrap">
-    <div class="section-head"><div class="kicker">Syllabus</div><h2>16 buổi trong 8 tuần.</h2></div>
+    <div class="section-head"><div class="kicker">Syllabus</div><h2>16 sessions in 8 weeks.</h2></div>
     {levels}
     {schedule_table(c)}
   </div>
 </section>
 <section>
   <div class="wrap split">
-    <article class="card"><div class="icon-pill">Lab</div><h3>Công cụ & quyền lợi</h3><p>{c["tools"]}</p></article>
-    <article class="card"><div class="icon-pill">CV</div><h3>Minh chứng giữ lại</h3><p>{c["proof"]}</p></article>
+    <article class="card"><div class="icon-pill">Lab</div><h3>Tools &amp; access</h3><p>{c["tools"]}</p></article>
+    <article class="card"><div class="icon-pill">CV</div><h3>Evidence you keep</h3><p>{c["proof"]}</p></article>
   </div>
   {pager}
 </section>
@@ -660,7 +660,7 @@ def courses_index() -> str:
 </section>
 <section>
   <div class="wrap">
-    {diagram_figure("roadmap-12.svg", "Lộ trình 12 tháng sáu học phần AE01 đến AE06", "../")}
+    {diagram_figure("roadmap-12.svg", "12-month path, six modules AE01 to AE06", "../")}
     <div class="path">{cards}</div>
   </div>
 </section>
@@ -731,23 +731,28 @@ def schedule() -> str:
             slots = "".join(f"<li>{s}</li>" for s in intake["slots"])
             cards.append(
                 f"""<article class="sched-card is-open reveal">
-  <div class="when">Khai giảng {intake["start"]}</div>
-  <span class="soon">Đang mở đăng ký</span>
-  <h3>{c["code"]} · {c["title"]}</h3>
-  <p>{c["tagline"]}</p>
-  <ul class="slots">{slots}</ul>
-  <p>16 buổi · 8 tuần · {intake["hours"]}</p>
+  <a class="sched-main" href="../khoa-hoc/{c["slug"]}/">
+    <div class="when">Khai giảng {intake["start"]}</div>
+    <span class="soon">Đang mở đăng ký</span>
+    <h3>{c["code"]} · {c["title"]}</h3>
+    <p>{c["tagline"]}</p>
+    <ul class="slots">{slots}</ul>
+    <p>16 sessions · 8 weeks · {intake["hours"]}</p>
+    <p class="sched-go">Xem syllabus →</p>
+  </a>
   <div class="open"><a class="btn btn-primary" href="{MSG}" target="_blank" rel="noopener">Đăng ký qua Messenger</a></div>
 </article>"""
             )
         else:
             cards.append(
                 f"""<article class="sched-card reveal">
-  <div class="when">{c["months"]} · Sắp công bố</div>
-  <h3>{c["code"]} · {c["title"]}</h3>
-  <p>{c["tagline"]}</p>
-  <p>16 buổi · 8 tuần · GMT+7</p>
-  <p>Ngày và khung giờ xác nhận qua fanpage.</p>
+  <a class="sched-main" href="../khoa-hoc/{c["slug"]}/">
+    <div class="when">{c["months"]} · Sắp công bố</div>
+    <h3>{c["code"]} · {c["title"]}</h3>
+    <p>{c["tagline"]}</p>
+    <p>16 sessions · 8 weeks · GMT+7</p>
+    <p class="sched-go">Xem syllabus →</p>
+  </a>
   <div class="open"><a class="btn btn-ghost" href="{MSG}" target="_blank" rel="noopener">Nhận lịch khai giảng</a></div>
 </article>"""
             )

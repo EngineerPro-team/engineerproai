@@ -54,8 +54,8 @@ def roadmap() -> str:
         ("AE06", "T11–12", "Frontier Lab", 1010),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="22" font-weight="700" fill="{NAVY}">Lộ trình 12 tháng · 6 học phần</text>',
-        f'<text x="40" y="74" font-family="{FONT}" font-size="13" fill="{MUTED}">Mentor review từ Big Tech · GPU lab · portfolio có thể bảo vệ</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="22" font-weight="700" fill="{NAVY}">12-month path · 6 modules</text>',
+        f'<text x="40" y="74" font-family="{FONT}" font-size="13" fill="{MUTED}">Big Tech mentor review · GPU labs · defendable portfolio</text>',
         f'<path d="M110 200 H1010" stroke="url(#gline)" stroke-width="6" stroke-linecap="round"/>',
     ]
     for code, months, name, x in nodes:
@@ -66,15 +66,15 @@ def roadmap() -> str:
         parts.append("</g>")
         parts.append(f'<text x="{x}" y="278" text-anchor="middle" font-family="{FONT}" font-size="12" font-weight="700" fill="{BLUE}">{months}</text>')
         parts.append(f'<text x="{x}" y="298" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{NAVY}">{name}</text>')
-    parts.append(f'<text x="560" y="348" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">48 tuần học + 4 tuần dự phòng lễ / học bù / hoàn thiện portfolio</text>')
-    return svg(1120, 380, "\n".join(parts), "Lộ trình 12 tháng sáu học phần AE01 đến AE06")
+    parts.append(f'<text x="560" y="348" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">48 teaching weeks + 4 buffer weeks for holidays / make-up / portfolio</text>')
+    return svg(1120, 380, "\n".join(parts), "12-month path, six modules AE01 to AE06")
 
 
 def ae01() -> str:
     steps = ["L0 Baseline", "L1 Assist", "L2 Collab", "L3 Delegate", "L4 Spec team", "L5 Factory"]
     parts = [
-        f'<text x="40" y="46" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE01 · Năng suất AI theo cấp độ kỹ sư Big Tech</text>',
-        f'<text x="40" y="70" font-family="{FONT}" font-size="13" fill="{MUTED}">Từ dùng AI hỗ trợ đến software factory — cùng mentor review</text>',
+        f'<text x="40" y="46" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE01 · AI productivity, Big Tech engineer levels</text>',
+        f'<text x="40" y="70" font-family="{FONT}" font-size="13" fill="{MUTED}">From AI assistance to a software factory — mentor reviewed</text>',
     ]
     for i, label in enumerate(steps):
         x = 70 + i * 175
@@ -85,18 +85,18 @@ def ae01() -> str:
         if i < 5:
             parts.append(f'<path d="M{x + 158} {y + h/2} l14 0" stroke="{BLUE}" stroke-width="3" marker-end="url(#arr)"/>')
     parts.append(f'<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="{BLUE}"/></marker></defs>')
-    return svg(1120, 360, "\n".join(parts), "Thang năng lực AE01 từ L0 đến L5")
+    return svg(1120, 360, "\n".join(parts), "AE01 capability ladder from L0 to L5")
 
 
 def ae02() -> str:
     boxes = [
-        (80, "Đại số", "Vector · SVD"),
-        (340, "Giải tích", "Gradient · chain"),
-        (600, "Xác suất", "Bayes · MLE"),
-        (860, "Tối ưu", "GD · regularize"),
+        (80, "Linear algebra", "Vector · SVD"),
+        (340, "Calculus", "Gradient · chain"),
+        (600, "Probability", "Bayes · MLE"),
+        (860, "Optimization", "GD · regularize"),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE02 · Toán cho ML: trực giác → công thức → NumPy</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE02 · Math for ML: intuition → formula → NumPy</text>',
         f'<path d="M155 190 H965" stroke="url(#gline)" stroke-width="5" stroke-linecap="round"/>',
     ]
     for x, t, s in boxes:
@@ -104,20 +104,20 @@ def ae02() -> str:
         parts.append(hexagon(x + 95, 168, 22, BLUE))
         parts.append(f'<text x="{x + 95}" y="220" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="700" fill="{NAVY}">{t}</text>')
         parts.append(f'<text x="{x + 95}" y="242" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">{s}</text></g>')
-    parts.append(f'<text x="560" y="310" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Đầu ra: notebook kiểm tra gradient, similarity, projection, ước lượng xác suất</text>')
-    return svg(1120, 340, "\n".join(parts), "Bốn trụ toán của AE02")
+    parts.append(f'<text x="560" y="310" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Deliverable: notebook checking gradients, similarity, projection, probability estimates</text>')
+    return svg(1120, 340, "\n".join(parts), "Four math pillars of AE02")
 
 
 def ae03() -> str:
     labels = [
-        ("1. Bài toán", "Target & baseline"),
-        ("2. Split", "Tránh leakage"),
+        ("1. Problem", "Target & baseline"),
+        ("2. Split", "No leakage"),
         ("3. Fit", "Model + tune"),
         ("4. Eval", "Error analysis"),
-        ("5. Artifact", "Pipeline tái lập"),
+        ("5. Artifact", "Reproducible pipeline"),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE03 · Pipeline ML đáng tin — từ câu hỏi đến artifact</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE03 · Reliable ML pipeline — question to artifact</text>',
     ]
     for i, (t, s) in enumerate(labels):
         x = 50 + i * 215
@@ -128,8 +128,8 @@ def ae03() -> str:
         parts.append(f'<text x="{x + 20}" y="200" font-family="{FONT}" font-size="13" fill="{MUTED}">{s}</text></g>')
         if i < 4:
             parts.append(f'<path d="M{x + 200} 175 l20 0" stroke="{BLUE}" stroke-width="3"/>')
-    parts.append(f'<text x="560" y="290" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Bảo vệ được: dữ liệu nào dùng để fit, tune, và test</text>')
-    return svg(1120, 320, "\n".join(parts), "Pipeline machine learning AE03")
+    parts.append(f'<text x="560" y="290" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Defend: which data was used to fit, tune, and test</text>')
+    return svg(1120, 320, "\n".join(parts), "AE03 machine learning pipeline")
 
 
 def ae04() -> str:
@@ -142,26 +142,26 @@ def ae04() -> str:
         (760, 190, "Model card"),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE04 · Từ training loop đến mini language model trên GPU</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE04 · From training loop to a mini LM on GPU</text>',
         f'<rect x="60" y="90" width="300" height="160" rx="24" fill="{WHITE}" stroke="#D6E4FF"/>',
         f'<rect x="380" y="90" width="300" height="160" rx="24" fill="{WHITE}" stroke="#D6E4FF"/>',
         f'<rect x="740" y="90" width="300" height="160" rx="24" fill="{WHITE}" stroke="#D6E4FF"/>',
-        f'<text x="210" y="250" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{BLUE}">Nền tảng</text>',
+        f'<text x="210" y="250" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{BLUE}">Foundations</text>',
         f'<text x="530" y="250" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{BLUE}">Sequence models</text>',
-        f'<text x="890" y="250" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{BLUE}">Bằng chứng</text>',
+        f'<text x="890" y="250" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{BLUE}">Evidence</text>',
     ]
     for x, y, t in layers:
         parts.append(f'<rect x="{x}" y="{y}" width="260" height="44" rx="12" fill="{BLUE}"/>')
         parts.append(f'<text x="{x + 130}" y="{y + 28}" text-anchor="middle" font-family="{FONT}" font-size="14" font-weight="700" fill="{WHITE}">{t}</text>')
-    return svg(1120, 300, "\n".join(parts), "Lộ trình deep learning AE04")
+    return svg(1120, 300, "\n".join(parts), "AE04 deep learning path")
 
 
 def ae05() -> str:
-    left = ["Bài toán & ràng buộc", "Metric sản phẩm", "Kiến trúc tối thiểu", "Data & feature", "Model release", "Serving & online", "Scale & ops"]
-    right = ["API vs self-host", "RAG kiểm chứng", "Inference budget", "Eval / judge", "Tool contract"]
+    left = ["Problem & constraints", "Product metrics", "Minimum architecture", "Data & features", "Model release", "Serving & online", "Scale & ops"]
+    right = ["API vs self-host", "Verifiable RAG", "Inference budget", "Eval / judge", "Tool contract"]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE05 · System design: 9 bước ML + GenAI production</text>',
-        f'<text x="80" y="88" font-family="{FONT}" font-size="13" font-weight="700" fill="{BLUE}">9 bước ML</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE05 · System design: 9 ML steps + GenAI production</text>',
+        f'<text x="80" y="88" font-family="{FONT}" font-size="13" font-weight="700" fill="{BLUE}">9 ML steps</text>',
         f'<text x="620" y="88" font-family="{FONT}" font-size="13" font-weight="700" fill="{BLUE}">GenAI stack</text>',
     ]
     for i, t in enumerate(left):
@@ -174,18 +174,18 @@ def ae05() -> str:
         parts.append(f'<rect x="620" y="{y}" width="420" height="30" rx="10" fill="{BLUE}"/>')
         parts.append(f'<text x="830" y="{y + 20}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="600" fill="{WHITE}">{t}</text>')
     parts.append(f'<text x="560" y="330" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Capstone: recommendation/ranking + mock interview LLM/RAG</text>')
-    return svg(1120, 360, "\n".join(parts), "Thiết kế hệ thống ML và GenAI AE05")
+    return svg(1120, 360, "\n".join(parts), "AE05 ML and GenAI system design")
 
 
 def ae06() -> str:
     loop = [
-        (220, 160, "Đọc paper"),
-        (560, 90, "Câu hỏi & giả thuyết"),
-        (900, 160, "Thí nghiệm / GPU"),
-        (560, 250, "Report & bảo vệ"),
+        (220, 160, "Read papers"),
+        (560, 90, "Question & hypothesis"),
+        (900, 160, "Experiment / GPU"),
+        (560, 250, "Report & defense"),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE06 · Frontier lab: nghiên cứu như một kỹ năng kỹ sư</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">AE06 · Frontier lab: research as an engineering skill</text>',
         f'<path d="M300 160 C 380 80, 480 80, 560 110" fill="none" stroke="url(#gline)" stroke-width="4"/>',
         f'<path d="M700 110 C 820 80, 860 120, 900 160" fill="none" stroke="url(#gline)" stroke-width="4"/>',
         f'<path d="M900 190 C 860 250, 720 270, 640 260" fill="none" stroke="url(#gline)" stroke-width="4"/>',
@@ -194,7 +194,7 @@ def ae06() -> str:
     for x, y, t in loop:
         parts.append(f'<g filter="url(#soft)"><circle cx="{x}" cy="{y}" r="54" fill="{WHITE}" stroke="{BLUE}" stroke-width="3"/>')
         parts.append(f'<text x="{x}" y="{y + 5}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{NAVY}">{t}</text></g>')
-    return svg(1120, 340, "\n".join(parts), "Vòng nghiên cứu ứng dụng AE06")
+    return svg(1120, 340, "\n".join(parts), "AE06 applied research loop")
 
 
 def year_cal() -> str:

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" role="img" aria-label="Lộ trình deep learning AE04">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" role="img" aria-label="AE04 deep learning path">
   <defs>
     <linearGradient id="gline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7AA4FF"/>
@@ -13,13 +13,13 @@
     </filter>
   </defs>
   <rect width="1120" height="300" rx="28" fill="url(#gcard)"/>
-<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE04 · Từ training loop đến mini language model trên GPU</text>
+<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE04 · From training loop to a mini LM on GPU</text>
 <rect x="60" y="90" width="300" height="160" rx="24" fill="#FFFFFF" stroke="#D6E4FF"/>
 <rect x="380" y="90" width="300" height="160" rx="24" fill="#FFFFFF" stroke="#D6E4FF"/>
 <rect x="740" y="90" width="300" height="160" rx="24" fill="#FFFFFF" stroke="#D6E4FF"/>
-<text x="210" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Nền tảng</text>
+<text x="210" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Foundations</text>
 <text x="530" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Sequence models</text>
-<text x="890" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Bằng chứng</text>
+<text x="890" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Evidence</text>
 <rect x="80" y="120" width="260" height="44" rx="12" fill="#1862FF"/>
 <text x="210" y="148" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Tensor & Autograd</text>
 <rect x="80" y="190" width="260" height="44" rx="12" fill="#1862FF"/>

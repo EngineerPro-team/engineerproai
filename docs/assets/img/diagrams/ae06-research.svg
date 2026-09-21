@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" role="img" aria-label="Vòng nghiên cứu ứng dụng AE06">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" role="img" aria-label="AE06 applied research loop">
   <defs>
     <linearGradient id="gline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7AA4FF"/>
@@ -13,17 +13,17 @@
     </filter>
   </defs>
   <rect width="1120" height="340" rx="28" fill="url(#gcard)"/>
-<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE06 · Frontier lab: nghiên cứu như một kỹ năng kỹ sư</text>
+<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE06 · Frontier lab: research as an engineering skill</text>
 <path d="M300 160 C 380 80, 480 80, 560 110" fill="none" stroke="url(#gline)" stroke-width="4"/>
 <path d="M700 110 C 820 80, 860 120, 900 160" fill="none" stroke="url(#gline)" stroke-width="4"/>
 <path d="M900 190 C 860 250, 720 270, 640 260" fill="none" stroke="url(#gline)" stroke-width="4"/>
 <path d="M480 260 C 360 250, 280 220, 250 190" fill="none" stroke="url(#gline)" stroke-width="4"/>
 <g filter="url(#soft)"><circle cx="220" cy="160" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="220" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Đọc paper</text></g>
+<text x="220" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Read papers</text></g>
 <g filter="url(#soft)"><circle cx="560" cy="90" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="560" y="95" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Câu hỏi & giả thuyết</text></g>
+<text x="560" y="95" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Question & hypothesis</text></g>
 <g filter="url(#soft)"><circle cx="900" cy="160" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="900" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Thí nghiệm / GPU</text></g>
+<text x="900" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Experiment / GPU</text></g>
 <g filter="url(#soft)"><circle cx="560" cy="250" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="560" y="255" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Report & bảo vệ</text></g>
+<text x="560" y="255" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Report & defense</text></g>
 </svg>

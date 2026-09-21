@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 320" role="img" aria-label="Pipeline machine learning AE03">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 320" role="img" aria-label="AE03 machine learning pipeline">
   <defs>
     <linearGradient id="gline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7AA4FF"/>
@@ -13,18 +13,18 @@
     </filter>
   </defs>
   <rect width="1120" height="320" rx="28" fill="url(#gcard)"/>
-<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE03 · Pipeline ML đáng tin — từ câu hỏi đến artifact</text>
+<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE03 · Reliable ML pipeline — question to artifact</text>
 <g filter="url(#soft)"><rect x="50" y="110" width="195" height="130" rx="20" fill="#FFFFFF"/>
 <circle cx="78" cy="148" r="16" fill="#1862FF"/>
 <text x="78" y="153" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1</text>
-<text x="104" y="154" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1F3D">Bài toán</text>
+<text x="104" y="154" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1F3D">Problem</text>
 <text x="70" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Target & baseline</text></g>
 <path d="M250 175 l20 0" stroke="#1862FF" stroke-width="3"/>
 <g filter="url(#soft)"><rect x="265" y="110" width="195" height="130" rx="20" fill="#FFFFFF"/>
 <circle cx="293" cy="148" r="16" fill="#1862FF"/>
 <text x="293" y="153" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">2</text>
 <text x="319" y="154" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1F3D">Split</text>
-<text x="285" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Tránh leakage</text></g>
+<text x="285" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">No leakage</text></g>
 <path d="M465 175 l20 0" stroke="#1862FF" stroke-width="3"/>
 <g filter="url(#soft)"><rect x="480" y="110" width="195" height="130" rx="20" fill="#FFFFFF"/>
 <circle cx="508" cy="148" r="16" fill="#1862FF"/>
@@ -42,6 +42,6 @@
 <circle cx="938" cy="148" r="16" fill="#1862FF"/>
 <text x="938" y="153" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">5</text>
 <text x="964" y="154" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1F3D">Artifact</text>
-<text x="930" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Pipeline tái lập</text></g>
-<text x="560" y="290" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Bảo vệ được: dữ liệu nào dùng để fit, tune, và test</text>
+<text x="930" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Reproducible pipeline</text></g>
+<text x="560" y="290" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Defend: which data was used to fit, tune, and test</text>
 </svg>

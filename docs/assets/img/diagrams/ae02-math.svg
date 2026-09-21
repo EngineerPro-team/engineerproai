@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" role="img" aria-label="Bốn trụ toán của AE02">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" role="img" aria-label="Four math pillars of AE02">
   <defs>
     <linearGradient id="gline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7AA4FF"/>
@@ -13,23 +13,23 @@
     </filter>
   </defs>
   <rect width="1120" height="340" rx="28" fill="url(#gcard)"/>
-<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE02 · Toán cho ML: trực giác → công thức → NumPy</text>
+<text x="40" y="48" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0B1F3D">AE02 · Math for ML: intuition → formula → NumPy</text>
 <path d="M155 190 H965" stroke="url(#gline)" stroke-width="5" stroke-linecap="round"/>
 <g filter="url(#soft)"><rect x="80" y="130" width="190" height="120" rx="22" fill="#FFFFFF" stroke="#1862FF" stroke-width="1.5"/>
 <polygon points="175.0,146.0 194.1,157.0 194.1,179.0 175.0,190.0 155.9,179.0 155.9,157.0" fill="#1862FF"/>
-<text x="175" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Đại số</text>
+<text x="175" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Linear algebra</text>
 <text x="175" y="242" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#5A6B86">Vector · SVD</text></g>
 <g filter="url(#soft)"><rect x="340" y="130" width="190" height="120" rx="22" fill="#FFFFFF" stroke="#1862FF" stroke-width="1.5"/>
 <polygon points="435.0,146.0 454.1,157.0 454.1,179.0 435.0,190.0 415.9,179.0 415.9,157.0" fill="#1862FF"/>
-<text x="435" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Giải tích</text>
+<text x="435" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Calculus</text>
 <text x="435" y="242" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#5A6B86">Gradient · chain</text></g>
 <g filter="url(#soft)"><rect x="600" y="130" width="190" height="120" rx="22" fill="#FFFFFF" stroke="#1862FF" stroke-width="1.5"/>
 <polygon points="695.0,146.0 714.1,157.0 714.1,179.0 695.0,190.0 675.9,179.0 675.9,157.0" fill="#1862FF"/>
-<text x="695" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Xác suất</text>
+<text x="695" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Probability</text>
 <text x="695" y="242" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#5A6B86">Bayes · MLE</text></g>
 <g filter="url(#soft)"><rect x="860" y="130" width="190" height="120" rx="22" fill="#FFFFFF" stroke="#1862FF" stroke-width="1.5"/>
 <polygon points="955.0,146.0 974.1,157.0 974.1,179.0 955.0,190.0 935.9,179.0 935.9,157.0" fill="#1862FF"/>
-<text x="955" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Tối ưu</text>
+<text x="955" y="220" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="#0B1F3D">Optimization</text>
 <text x="955" y="242" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#5A6B86">GD · regularize</text></g>
-<text x="560" y="310" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Đầu ra: notebook kiểm tra gradient, similarity, projection, ước lượng xác suất</text>
+<text x="560" y="310" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Deliverable: notebook checking gradients, similarity, projection, probability estimates</text>
 </svg>
