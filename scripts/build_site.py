@@ -9,6 +9,7 @@ DOCS = ROOT / "docs"
 SITE = "https://engineerpro-team.github.io/engineerproai"
 FB = "https://www.facebook.com/EngineerProAI"
 MSG = "https://m.me/EngineerProAI"
+GA_ID = "G-5TH79627Q6"
 COMPANIES = [
     ("nvidia.svg", "NVIDIA"),
     ("tiktok.svg", "TikTok"),
@@ -336,6 +337,17 @@ def messenger_fab() -> str:
 </a>"""
 
 
+def gtag_snippet() -> str:
+    return f"""<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA_ID}');
+</script>"""
+
+
 def page(title: str, description: str, path: str, prefix: str, active: str, body: str, extra_head: str = "") -> str:
     canonical = f"{SITE}/{path}" if path else f"{SITE}/"
     og = f"{SITE}/assets/img/og-share.png"
@@ -343,6 +355,7 @@ def page(title: str, description: str, path: str, prefix: str, active: str, body
 <html lang="vi">
 <head>
   <meta charset="utf-8">
+  {gtag_snippet()}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
   <meta name="description" content="{description}">
