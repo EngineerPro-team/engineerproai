@@ -18,7 +18,7 @@
 <text x="620" y="88" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#1862FF">GenAI stack</text>
 <rect x="80" y="108" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="108" width="8" height="24" rx="4" fill="#1862FF"/>
-<text x="100" y="125" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">1. Problem & constraints</text>
+<text x="100" y="125" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">1. Problem &amp; constraints</text>
 <rect x="80" y="136" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="136" width="8" height="24" rx="4" fill="#1862FF"/>
 <text x="100" y="153" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">2. Product metrics</text>
@@ -27,16 +27,16 @@
 <text x="100" y="181" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">3. Minimum architecture</text>
 <rect x="80" y="192" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="192" width="8" height="24" rx="4" fill="#1862FF"/>
-<text x="100" y="209" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">4. Data & features</text>
+<text x="100" y="209" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">4. Data &amp; features</text>
 <rect x="80" y="220" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="220" width="8" height="24" rx="4" fill="#1862FF"/>
 <text x="100" y="237" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">5. Model release</text>
 <rect x="80" y="248" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="248" width="8" height="24" rx="4" fill="#1862FF"/>
-<text x="100" y="265" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">6. Serving & online</text>
+<text x="100" y="265" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">6. Serving &amp; online</text>
 <rect x="80" y="276" width="420" height="24" rx="8" fill="#FFFFFF"/>
 <rect x="80" y="276" width="8" height="24" rx="4" fill="#1862FF"/>
-<text x="100" y="293" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">7. Scale & ops</text>
+<text x="100" y="293" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#0B1F3D">7. Scale &amp; ops</text>
 <rect x="620" y="108" width="420" height="30" rx="10" fill="#1862FF"/>
 <text x="830" y="128" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">API vs self-host</text>
 <rect x="620" y="144" width="420" height="30" rx="10" fill="#1862FF"/>

@@ -21,7 +21,7 @@
 <text x="530" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Sequence models</text>
 <text x="890" y="250" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1862FF">Evidence</text>
 <rect x="80" y="120" width="260" height="44" rx="12" fill="#1862FF"/>
-<text x="210" y="148" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Tensor & Autograd</text>
+<text x="210" y="148" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Tensor &amp; Autograd</text>
 <rect x="80" y="190" width="260" height="44" rx="12" fill="#1862FF"/>
 <text x="210" y="218" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">MLP · CNN</text>
 <rect x="400" y="120" width="260" height="44" rx="12" fill="#1862FF"/>

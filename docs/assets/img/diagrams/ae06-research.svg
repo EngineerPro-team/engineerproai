@@ -21,9 +21,9 @@
 <g filter="url(#soft)"><circle cx="220" cy="160" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
 <text x="220" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Read papers</text></g>
 <g filter="url(#soft)"><circle cx="560" cy="90" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="560" y="95" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Question & hypothesis</text></g>
+<text x="560" y="95" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Question &amp; hypothesis</text></g>
 <g filter="url(#soft)"><circle cx="900" cy="160" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
 <text x="900" y="165" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Experiment / GPU</text></g>
 <g filter="url(#soft)"><circle cx="560" cy="250" r="54" fill="#FFFFFF" stroke="#1862FF" stroke-width="3"/>
-<text x="560" y="255" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Report & defense</text></g>
+<text x="560" y="255" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B1F3D">Report &amp; defense</text></g>
 </svg>

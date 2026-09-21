@@ -13,8 +13,12 @@ WHITE = "#FFFFFF"
 FONT = "Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif"
 
 
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def svg(w: int, h: int, inner: str, label: str) -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{label}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(label)}">
   <defs>
     <linearGradient id="gline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7AA4FF"/>
@@ -54,18 +58,18 @@ def roadmap() -> str:
         ("AE06", "T11–12", "Frontier Lab", 1010),
     ]
     parts = [
-        f'<text x="40" y="48" font-family="{FONT}" font-size="22" font-weight="700" fill="{NAVY}">12-month path · 6 modules</text>',
-        f'<text x="40" y="74" font-family="{FONT}" font-size="13" fill="{MUTED}">Big Tech mentor review · GPU labs · defendable portfolio</text>',
+        f'<text x="40" y="48" font-family="{FONT}" font-size="22" font-weight="700" fill="{NAVY}">{esc("12-month path · 6 modules")}</text>',
+        f'<text x="40" y="74" font-family="{FONT}" font-size="13" fill="{MUTED}">{esc("Big Tech mentor review · GPU labs · defendable portfolio")}</text>',
         f'<path d="M110 200 H1010" stroke="url(#gline)" stroke-width="6" stroke-linecap="round"/>',
     ]
     for code, months, name, x in nodes:
         parts.append(f'<g filter="url(#soft)">')
         parts.append(hexagon(x, 200, 52, WHITE, BLUE))
         parts.append(hexagon(x, 200, 40, BLUE))
-        parts.append(f'<text x="{x}" y="206" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{WHITE}">{code}</text>')
+        parts.append(f'<text x="{x}" y="206" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{WHITE}">{esc(code)}</text>')
         parts.append("</g>")
-        parts.append(f'<text x="{x}" y="278" text-anchor="middle" font-family="{FONT}" font-size="12" font-weight="700" fill="{BLUE}">{months}</text>')
-        parts.append(f'<text x="{x}" y="298" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{NAVY}">{name}</text>')
+        parts.append(f'<text x="{x}" y="278" text-anchor="middle" font-family="{FONT}" font-size="12" font-weight="700" fill="{BLUE}">{esc(months)}</text>')
+        parts.append(f'<text x="{x}" y="298" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{NAVY}">{esc(name)}</text>')
     parts.append(f'<text x="560" y="348" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">48 teaching weeks + 4 buffer weeks for holidays / make-up / portfolio</text>')
     return svg(1120, 380, "\n".join(parts), "12-month path, six modules AE01 to AE06")
 
@@ -81,7 +85,7 @@ def ae01() -> str:
         h = 70 + i * 22
         y = 300 - h
         parts.append(f'<rect x="{x}" y="{y}" width="150" height="{h}" rx="16" fill="{BLUE}" opacity="{0.45 + i * 0.09}"/>')
-        parts.append(f'<text x="{x + 75}" y="{y - 12}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{NAVY}">{label}</text>')
+        parts.append(f'<text x="{x + 75}" y="{y - 12}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{NAVY}">{esc(label)}</text>')
         if i < 5:
             parts.append(f'<path d="M{x + 158} {y + h/2} l14 0" stroke="{BLUE}" stroke-width="3" marker-end="url(#arr)"/>')
     parts.append(f'<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="{BLUE}"/></marker></defs>')
@@ -102,8 +106,8 @@ def ae02() -> str:
     for x, t, s in boxes:
         parts.append(f'<g filter="url(#soft)"><rect x="{x}" y="130" width="190" height="120" rx="22" fill="{WHITE}" stroke="{BLUE}" stroke-width="1.5"/>')
         parts.append(hexagon(x + 95, 168, 22, BLUE))
-        parts.append(f'<text x="{x + 95}" y="220" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="700" fill="{NAVY}">{t}</text>')
-        parts.append(f'<text x="{x + 95}" y="242" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">{s}</text></g>')
+        parts.append(f'<text x="{x + 95}" y="220" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="700" fill="{NAVY}">{esc(t)}</text>')
+        parts.append(f'<text x="{x + 95}" y="242" text-anchor="middle" font-family="{FONT}" font-size="12" fill="{MUTED}">{esc(s)}</text></g>')
     parts.append(f'<text x="560" y="310" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Deliverable: notebook checking gradients, similarity, projection, probability estimates</text>')
     return svg(1120, 340, "\n".join(parts), "Four math pillars of AE02")
 
@@ -124,8 +128,8 @@ def ae03() -> str:
         parts.append(f'<g filter="url(#soft)"><rect x="{x}" y="110" width="195" height="130" rx="20" fill="{WHITE}"/>')
         parts.append(f'<circle cx="{x + 28}" cy="148" r="16" fill="{BLUE}"/>')
         parts.append(f'<text x="{x + 28}" y="153" text-anchor="middle" font-family="{FONT}" font-size="12" font-weight="700" fill="{WHITE}">{i+1}</text>')
-        parts.append(f'<text x="{x + 54}" y="154" font-family="{FONT}" font-size="15" font-weight="700" fill="{NAVY}">{t[3:]}</text>')
-        parts.append(f'<text x="{x + 20}" y="200" font-family="{FONT}" font-size="13" fill="{MUTED}">{s}</text></g>')
+        parts.append(f'<text x="{x + 54}" y="154" font-family="{FONT}" font-size="15" font-weight="700" fill="{NAVY}">{esc(t[3:])}</text>')
+        parts.append(f'<text x="{x + 20}" y="200" font-family="{FONT}" font-size="13" fill="{MUTED}">{esc(s)}</text></g>')
         if i < 4:
             parts.append(f'<path d="M{x + 200} 175 l20 0" stroke="{BLUE}" stroke-width="3"/>')
     parts.append(f'<text x="560" y="290" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Defend: which data was used to fit, tune, and test</text>')
@@ -152,7 +156,7 @@ def ae04() -> str:
     ]
     for x, y, t in layers:
         parts.append(f'<rect x="{x}" y="{y}" width="260" height="44" rx="12" fill="{BLUE}"/>')
-        parts.append(f'<text x="{x + 130}" y="{y + 28}" text-anchor="middle" font-family="{FONT}" font-size="14" font-weight="700" fill="{WHITE}">{t}</text>')
+        parts.append(f'<text x="{x + 130}" y="{y + 28}" text-anchor="middle" font-family="{FONT}" font-size="14" font-weight="700" fill="{WHITE}">{esc(t)}</text>')
     return svg(1120, 300, "\n".join(parts), "AE04 deep learning path")
 
 
@@ -168,11 +172,11 @@ def ae05() -> str:
         y = 108 + i * 28
         parts.append(f'<rect x="80" y="{y}" width="420" height="24" rx="8" fill="{WHITE}"/>')
         parts.append(f'<rect x="80" y="{y}" width="8" height="24" rx="4" fill="{BLUE}"/>')
-        parts.append(f'<text x="100" y="{y + 17}" font-family="{FONT}" font-size="12" fill="{NAVY}">{i+1}. {t}</text>')
+        parts.append(f'<text x="100" y="{y + 17}" font-family="{FONT}" font-size="12" fill="{NAVY}">{i+1}. {esc(t)}</text>')
     for i, t in enumerate(right):
         y = 108 + i * 36
         parts.append(f'<rect x="620" y="{y}" width="420" height="30" rx="10" fill="{BLUE}"/>')
-        parts.append(f'<text x="830" y="{y + 20}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="600" fill="{WHITE}">{t}</text>')
+        parts.append(f'<text x="830" y="{y + 20}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="600" fill="{WHITE}">{esc(t)}</text>')
     parts.append(f'<text x="560" y="330" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">Capstone: recommendation/ranking + mock interview LLM/RAG</text>')
     return svg(1120, 360, "\n".join(parts), "AE05 ML and GenAI system design")
 
@@ -193,7 +197,7 @@ def ae06() -> str:
     ]
     for x, y, t in loop:
         parts.append(f'<g filter="url(#soft)"><circle cx="{x}" cy="{y}" r="54" fill="{WHITE}" stroke="{BLUE}" stroke-width="3"/>')
-        parts.append(f'<text x="{x}" y="{y + 5}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{NAVY}">{t}</text></g>')
+        parts.append(f'<text x="{x}" y="{y + 5}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{NAVY}">{esc(t)}</text></g>')
     return svg(1120, 340, "\n".join(parts), "AE06 applied research loop")
 
 
@@ -207,7 +211,7 @@ def year_cal() -> str:
         ("Sắp công bố", "AE06", "Frontier Lab"),
     ]
     parts = [
-        f'<text x="40" y="46" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">Lịch khai giảng — đợt AE01 &amp; AE02 đã chốt</text>',
+        f'<text x="40" y="46" font-family="{FONT}" font-size="20" font-weight="700" fill="{NAVY}">{esc("Lịch khai giảng — đợt AE01 & AE02 đã chốt")}</text>',
         f'<text x="40" y="70" font-family="{FONT}" font-size="13" fill="{MUTED}">AE01: 16 buổi từ 25/11/2026. AE02: 16 buổi từ 23/12/2026. Giờ GMT+7.</text>',
     ]
     for i, (m, code, name) in enumerate(months):
@@ -216,9 +220,9 @@ def year_cal() -> str:
         y = 100 + row * 175
         parts.append(f'<g filter="url(#soft)"><rect x="{x}" y="{y}" width="330" height="150" rx="22" fill="{WHITE}"/>')
         parts.append(f'<rect x="{x}" y="{y}" width="330" height="8" rx="4" fill="{BLUE}"/>')
-        parts.append(f'<text x="{x + 165}" y="{y + 48}" text-anchor="middle" font-family="{FONT}" font-size="14" fill="{BLUE}">{m}</text>')
-        parts.append(f'<text x="{x + 165}" y="{y + 84}" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="700" fill="{NAVY}">{code}</text>')
-        parts.append(f'<text x="{x + 165}" y="{y + 116}" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">{name}</text></g>')
+        parts.append(f'<text x="{x + 165}" y="{y + 48}" text-anchor="middle" font-family="{FONT}" font-size="14" fill="{BLUE}">{esc(m)}</text>')
+        parts.append(f'<text x="{x + 165}" y="{y + 84}" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="700" fill="{NAVY}">{esc(code)}</text>')
+        parts.append(f'<text x="{x + 165}" y="{y + 116}" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">{esc(name)}</text></g>')
     parts.append(f'<text x="560" y="460" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{MUTED}">AE01–AE02: 2 giờ / buổi · 2 buổi / tuần · 8 tuần · GMT+7</text>')
     return svg(1120, 490, "\n".join(parts), "Lịch khai giảng AE01 25/11/2026 và AE02 23/12/2026")
 

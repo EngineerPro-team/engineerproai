@@ -18,7 +18,7 @@
 <circle cx="78" cy="148" r="16" fill="#1862FF"/>
 <text x="78" y="153" text-anchor="middle" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1</text>
 <text x="104" y="154" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1F3D">Problem</text>
-<text x="70" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Target & baseline</text></g>
+<text x="70" y="200" font-family="Sora, Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5A6B86">Target &amp; baseline</text></g>
 <path d="M250 175 l20 0" stroke="#1862FF" stroke-width="3"/>
 <g filter="url(#soft)"><rect x="265" y="110" width="195" height="130" rx="20" fill="#FFFFFF"/>
 <circle cx="293" cy="148" r="16" fill="#1862FF"/>
