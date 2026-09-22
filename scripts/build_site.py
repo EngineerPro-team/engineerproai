@@ -19,11 +19,11 @@ COMPANIES = [
 PEOPLE = [
     {
         "name": "Đạt Phạm",
-        "badge": "Giảng viên",
-        "photo": "dat-pham.jpg",
-        "role": "Software Engineer",
-        "company": "NVIDIA",
-        "tags": [("nvidia.svg", "NVIDIA")],
+        "badge": "Mentor",
+        "photo": None,
+        "role": "",
+        "company": "",
+        "tags": [],
         "track": "Phụ trách giảng dạy AI/ML Engineering — GPU lab, training, model card.",
         "linkedin": "https://www.linkedin.com/in/datphamvn/",
     },
@@ -478,7 +478,7 @@ def home() -> str:
     <div>
       <div class="eyebrow">Mentor từ NVIDIA, TikTok, Amazon, Grab</div>
       <h1>Sáu khoá AI Engineering — học với giảng viên đang làm tại Big Tech.</h1>
-      <p class="lede">Lộ trình 12 tháng cho người đã biết lập trình. Công cụ trả phí, GPU lab, contribution có mentor review. Giảng viên NVIDIA; cố vấn từ TikTok, Grab và Amazon.</p>
+      <p class="lede">Lộ trình 12 tháng cho người đã biết lập trình. Công cụ trả phí, GPU lab, contribution có mentor review. Cố vấn từ TikTok, Grab và Amazon.</p>
       <p class="tagline">Learn with the tools. Train on GPUs. Contribute to real projects.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-lg" href="{MSG}" target="_blank" rel="noopener">Tư vấn qua Messenger</a>
@@ -559,8 +559,8 @@ def home() -> str:
 
 <section>
   <div class="wrap callout reveal">
-    <h2>Giảng viên NVIDIA. Cố vấn TikTok, Grab và Amazon.</h2>
-    <p>Anh Đạt giảng dạy. Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
+    <h2>Mentor và cố vấn Big Tech.</h2>
+    <p>Mentor: anh Đạt. Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
     <div class="hero-actions">
       <a class="btn btn-ghost" href="giang-vien/">Xem giảng viên</a>
       <a class="btn btn-primary" href="lich-khai-giang/">Lịch khai giảng</a>
@@ -570,7 +570,7 @@ def home() -> str:
 """
     return page(
         "EngineerPro AI — 6 khoá AI Engineering với giảng viên Big Tech",
-        "Lộ trình 12 tháng, 6 khoá: AI productivity, toán ML, machine learning, deep learning, system design và frontier lab. Giảng viên NVIDIA; cố vấn TikTok, Grab và Amazon. GPU, công cụ trả phí, mentor review.",
+        "Lộ trình 12 tháng, 6 khoá: AI productivity, toán ML, machine learning, deep learning, system design và frontier lab. Mentor review; cố vấn TikTok, Grab và Amazon. GPU, công cụ trả phí.",
         "",
         "",
         "home",
@@ -744,25 +744,38 @@ def instructors() -> str:
     for p in PEOPLE:
         tags = "".join(
             f'<div class="company-tag"><img src="../assets/img/companies/{fn}" alt="">{name}</div>'
-            for fn, name in p["tags"]
+            for fn, name in p.get("tags") or []
         )
-        cards.append(
-            f"""<article class="card person">
-  <div class="avatar"><img src="../assets/img/mentors/{p["photo"]}" alt="{p["name"]}"></div>
-  <span class="soon">{p["badge"]}</span>
-  <h3>{p["name"]}</h3>
-  <p class="person-role">{p["role"]} @ {p["company"]}</p>
-  <div class="person-tags">{tags}</div>
-  <p>{p["track"]}</p>
-  <a class="btn btn-ghost" href="{p["linkedin"]}" target="_blank" rel="noopener">LinkedIn</a>
-</article>"""
-        )
+        if p.get("photo"):
+            avatar = f'<div class="avatar"><img src="../assets/img/mentors/{p["photo"]}" alt="{p["name"]}"></div>'
+        else:
+            avatar = '<div class="avatar is-blank" aria-hidden="true"></div>'
+        role = ""
+        if p.get("role") and p.get("company"):
+            role = f'<p class="person-role">{p["role"]} @ {p["company"]}</p>'
+        elif p.get("role"):
+            role = f'<p class="person-role">{p["role"]}</p>'
+        tag_row = f'<div class="person-tags">{tags}</div>' if tags else ""
+        parts = [
+            "<article class=\"card person\">",
+            f"  {avatar}",
+            f"  <span class=\"soon\">{p['badge']}</span>",
+            f"  <h3>{p['name']}</h3>",
+        ]
+        if role:
+            parts.append(f"  {role}")
+        if tag_row:
+            parts.append(f"  {tag_row}")
+        parts.append(f"  <p>{p['track']}</p>")
+        parts.append(f"  <a class=\"btn btn-ghost\" href=\"{p['linkedin']}\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>")
+        parts.append("</article>")
+        cards.append("\n".join(parts))
     body = f"""
 <section class="page-hero">
   <div class="wrap">
     <p class="crumbs"><a href="../index.html">Trang chủ</a> / Giảng viên</p>
-    <h1>Giảng viên và cố vấn Big Tech.</h1>
-    <p class="lede">Giảng viên: anh Đạt (NVIDIA). Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok). Team từ NVIDIA, TikTok, Amazon, Grab.</p>
+    <h1>Mentor và cố vấn Big Tech.</h1>
+    <p class="lede">Mentor: anh Đạt. Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
     {logo_strip("../")}
   </div>
 </section>
@@ -779,7 +792,7 @@ def instructors() -> str:
 """
     return page(
         "Giảng viên | EngineerPro AI",
-        "Giảng viên Đạt Phạm (NVIDIA). Cố vấn Lâm Phạm (ex-Senior SWE TikTok, Grab) và Harry Lê Quang Hoà (SWE @ Amazon, ex-Tech Lead TikTok).",
+        "Mentor Đạt Phạm. Cố vấn Lâm Phạm (ex-Senior SWE TikTok, Grab) và Harry Lê Quang Hoà (SWE @ Amazon, ex-Tech Lead TikTok).",
         "giang-vien/",
         "../",
         "instructors",
