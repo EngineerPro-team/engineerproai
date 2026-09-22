@@ -21,8 +21,8 @@ PEOPLE = [
         "name": "Đạt Phạm",
         "badge": "Mentor",
         "photo": None,
-        "role": "",
-        "company": "",
+        "role": "Software Engineer",
+        "company": "NVIDIA",
         "tags": [],
         "track": "Phụ trách giảng dạy AI/ML Engineering — GPU lab, training, model card.",
         "linkedin": "https://www.linkedin.com/in/datphamvn/",
@@ -560,7 +560,7 @@ def home() -> str:
 <section>
   <div class="wrap callout reveal">
     <h2>Mentor và cố vấn Big Tech.</h2>
-    <p>Mentor: anh Đạt. Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
+    <p>Mentor: anh Đạt (NVIDIA). Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
     <div class="hero-actions">
       <a class="btn btn-ghost" href="giang-vien/">Xem giảng viên</a>
       <a class="btn btn-primary" href="lich-khai-giang/">Lịch khai giảng</a>
@@ -775,7 +775,7 @@ def instructors() -> str:
   <div class="wrap">
     <p class="crumbs"><a href="../index.html">Trang chủ</a> / Giảng viên</p>
     <h1>Mentor và cố vấn Big Tech.</h1>
-    <p class="lede">Mentor: anh Đạt. Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
+    <p class="lede">Mentor: anh Đạt (NVIDIA). Cố vấn: anh Lâm (ex-Senior SWE TikTok, Grab) và anh Hoà (SWE @ Amazon, ex-Tech Lead TikTok).</p>
     {logo_strip("../")}
   </div>
 </section>
@@ -792,7 +792,7 @@ def instructors() -> str:
 """
     return page(
         "Giảng viên | EngineerPro AI",
-        "Mentor Đạt Phạm. Cố vấn Lâm Phạm (ex-Senior SWE TikTok, Grab) và Harry Lê Quang Hoà (SWE @ Amazon, ex-Tech Lead TikTok).",
+        "Mentor Đạt Phạm (NVIDIA). Cố vấn Lâm Phạm (ex-Senior SWE TikTok, Grab) và Harry Lê Quang Hoà (SWE @ Amazon, ex-Tech Lead TikTok).",
         "giang-vien/",
         "../",
         "instructors",
